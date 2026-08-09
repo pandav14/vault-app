@@ -7,8 +7,9 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <style>
-        @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap');
-        body { font-family: 'Plus Jakarta Sans', sans-serif; background-color: #020617; }
+        @import url('https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700;800&family=Plus+Jakarta+Sans:wght@800&display=swap');
+        body { font-family: 'Manrope', sans-serif; background-color: #020617; }
+        .brand-font { font-family: 'Plus Jakarta Sans', sans-serif; }
         .gradient-text { background: linear-gradient(to right, #60a5fa, #a78bfa); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
         .feature-box { background: rgba(30, 41, 59, 0.4); border: 1px solid rgba(51, 65, 85, 0.5); backdrop-filter: blur(12px); transition: all 0.3s ease; }
         .feature-box:hover { border-color: #3b82f6; transform: translateY(-8px); box-shadow: 0 20px 40px -20px rgba(59, 130, 246, 0.3); }
@@ -24,7 +25,7 @@
         <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
             <div class="flex items-center gap-3">
                 <i class="fas fa-shield-halved text-blue-500 text-2xl"></i>
-                <span class="text-xl font-black tracking-tighter uppercase">Vault Secure Local Storage</span>
+                <span class="text-xl font-black tracking-tighter brand-font gradient-text">Vault Secure Local Storage</span>
             </div>
             <a href="https://play.google.com/store/apps/details?id=com.simplethings.vault" class="bg-blue-600 hover:bg-blue-500 px-6 py-2 rounded-full text-sm font-bold transition-all shadow-lg shadow-blue-600/20">
                 Download Free
@@ -153,7 +154,7 @@
             <div class="flex flex-col items-center md:items-start">
                 <div class="flex items-center gap-2 mb-2">
                     <i class="fas fa-shield-halved text-blue-500"></i>
-                    <span class="font-black text-lg">VAULT SECURE LOCAL STORAGE</span>
+                    <span class="font-black text-lg brand-font gradient-text">Vault Secure Local Storage</span>
                 </div>
                 <p class="text-slate-500 text-sm">Secure. Private. Smart. Local.</p>
             </div>
