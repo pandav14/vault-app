@@ -31,9 +31,7 @@
 <nav class="sticky top-0 z-50 bg-[#020617]/90 backdrop-blur-md border-b border-slate-800/80 transition-all">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-3.5 flex flex-wrap justify-between items-center gap-4">
         <a href="#" class="flex items-center gap-3 group shrink-0">
-            <div class="w-10 h-10 rounded-xl bg-blue-600/20 border border-blue-500/30 flex items-center justify-center text-blue-400 group-hover:scale-105 transition-transform">
-                <i class="fas fa-shield-halved text-xl"></i>
-            </div>
+            <img src="img_1.png" alt="Vault: Hide Photos, Passwords Logo" class="w-10 h-10 sm:w-11 sm:h-11 rounded-2xl object-cover border border-blue-500/40 shadow-md shadow-blue-600/30 group-hover:scale-105 transition-transform shrink-0">
             <div class="flex flex-col">
                 <span class="text-lg sm:text-xl font-extrabold tracking-tight brand-font gradient-text">Vault: Hide Photos, Passwords</span>
                 <span class="text-[10px] text-slate-400 font-bold uppercase tracking-widest">100% Offline • Calculator Disguise • AI Vault</span>
@@ -50,9 +48,12 @@
             <a href="#faq" class="hover:text-blue-400 transition-colors whitespace-nowrap flex items-center gap-1.5"><i class="fas fa-circle-question text-slate-400"></i>FAQ</a>
         </div>
 
-        <a href="https://play.google.com/store/apps/details?id=com.simplethings.vault" class="bg-gradient-to-r from-blue-600 to-indigo-600 hover:from-blue-500 hover:to-indigo-500 text-white px-5 py-2 sm:px-6 sm:py-2.5 rounded-full text-xs sm:text-sm font-bold transition-all shadow-lg shadow-blue-600/25 hover:shadow-blue-500/40 flex items-center gap-2 shrink-0">
-            <i class="fab fa-google-play"></i>
-            <span>Download Free</span>
+        <a href="https://play.google.com/store/apps/details?id=com.simplethings.vault" class="hidden sm:flex bg-slate-900/90 hover:bg-slate-800 text-white px-4 py-2 rounded-full border border-blue-500/40 hover:border-blue-400 transition-all shadow-md shadow-blue-500/10 items-center gap-2.5 shrink-0 active:scale-95 group">
+            <i class="fab fa-google-play text-blue-400 group-hover:scale-110 transition-transform"></i>
+            <div class="flex flex-col text-left leading-none">
+                <span class="text-[9px] text-slate-400 font-bold uppercase tracking-wider">GET IT ON</span>
+                <span class="text-xs font-black tracking-tight text-white">Google Play</span>
+            </div>
         </a>
     </div>
 </nav>
@@ -74,15 +75,30 @@
         The ultimate 100% offline privacy app for Android. Hide sensitive photos & videos behind AES-256 encryption, manage passwords with system autofill, disguise your vault as a real working calculator, trim media with loss-free local AI, and scan documents with zero cloud risk.
     </p>
 
-    <!-- CTA Buttons -->
-    <div class="flex flex-col sm:flex-row justify-center items-center gap-4 sm:gap-5 mb-12">
-        <a href="https://play.google.com/store/apps/details?id=com.simplethings.vault" class="w-full sm:w-auto">
-            <img src="https://play.google.com/intl/en_us/badges/static/images/badges/en_badge_web_generic.png" alt="Get Vault: Hide Photos, Passwords on Google Play" class="h-16 sm:h-20 hover:scale-105 transition-transform mx-auto">
+    <!-- Elevated CTA Buttons & Trust Signals -->
+    <div class="flex flex-col sm:flex-row justify-center items-center gap-4 sm:gap-5 mb-6">
+        <a href="https://play.google.com/store/apps/details?id=com.simplethings.vault" class="w-full sm:w-auto group relative inline-flex items-center justify-center gap-3 px-8 py-4 rounded-2xl bg-gradient-to-r from-blue-600 via-indigo-600 to-purple-600 hover:from-blue-500 hover:to-purple-500 text-white font-extrabold text-base transition-all shadow-xl shadow-blue-600/30 hover:shadow-blue-500/50 hover:scale-[1.02] active:scale-95 border border-blue-400/30">
+            <i class="fab fa-google-play text-2xl group-hover:rotate-6 transition-transform"></i>
+            <div class="flex flex-col text-left leading-tight">
+                <span class="text-[10px] text-blue-200 uppercase tracking-widest font-bold">Free Download</span>
+                <span class="text-lg font-black tracking-tight">Get Vault on Google Play</span>
+            </div>
+            <i class="fas fa-arrow-right text-sm ml-1 group-hover:translate-x-1 transition-transform"></i>
         </a>
-        <a href="#features" class="w-full sm:w-auto px-6 sm:px-8 py-3.5 sm:py-4 rounded-2xl bg-slate-800/80 hover:bg-slate-700/80 border border-slate-700/60 text-slate-200 font-bold text-xs sm:text-sm transition-all flex items-center justify-center gap-2.5 active:scale-95">
+
+        <a href="#features" class="w-full sm:w-auto px-7 py-4 rounded-2xl bg-slate-800/80 hover:bg-slate-700/80 border border-slate-700/60 text-slate-200 font-bold text-sm transition-all flex items-center justify-center gap-2.5 active:scale-95 shadow-md">
             <i class="fas fa-layer-group text-blue-400"></i>
             <span>Explore All Features</span>
         </a>
+    </div>
+
+    <!-- Trust & Conversion Micro-Bar -->
+    <div class="flex flex-wrap items-center justify-center gap-3 sm:gap-6 text-xs font-bold text-slate-400 mb-12">
+        <span class="flex items-center gap-1.5"><i class="fas fa-star text-amber-400"></i> 4.9 Rating</span>
+        <span class="text-slate-700">•</span>
+        <span class="flex items-center gap-1.5"><i class="fas fa-shield-check text-emerald-400"></i> 100% Free & Offline</span>
+        <span class="text-slate-700">•</span>
+        <span class="flex items-center gap-1.5"><i class="fas fa-lock text-blue-400"></i> AES-256 Encryption</span>
     </div>
 
     <!-- Trust Badges -->
@@ -381,28 +397,70 @@
                 </div>
             </div>
 
-            <div class="bg-slate-900/80 p-8 rounded-3xl border border-slate-800">
-                <h3 class="text-xl font-bold mb-6 text-slate-200 text-center">Cloud vs. Vault Air-Gapped Local Storage</h3>
-                <div class="space-y-4 text-xs font-medium">
-                    <div class="flex justify-between items-center p-3 rounded-xl bg-slate-800/40">
-                        <span class="text-slate-400">Server Data Leak Risk</span>
-                        <span class="text-emerald-400 font-bold flex items-center gap-1"><i class="fas fa-shield"></i> ZERO (Vault)</span>
+            <div class="bg-slate-900/90 p-5 sm:p-8 rounded-2xl sm:rounded-3xl border border-slate-800 shadow-xl backdrop-blur-xl">
+                <!-- Card Header -->
+                <div class="text-center mb-6 pb-4 border-b border-slate-800">
+                    <h3 class="text-lg sm:text-xl font-extrabold text-white tracking-tight">Cloud Storage vs. Vault Air-Gapped</h3>
+                    <p class="text-xs text-slate-400 mt-1">Direct feature-by-feature security comparison</p>
+                </div>
+
+                <!-- Table Header Row -->
+                <div class="grid grid-cols-12 gap-2 text-[11px] sm:text-xs font-extrabold uppercase tracking-wider text-slate-400 pb-3 border-b border-slate-800/80 px-2 sm:px-3">
+                    <div class="col-span-6 text-left">Feature / Risk</div>
+                    <div class="col-span-3 text-center text-rose-400">Cloud Apps</div>
+                    <div class="col-span-3 text-right text-emerald-400">Vault App</div>
+                </div>
+
+                <!-- Comparison Rows -->
+                <div class="divide-y divide-slate-800/60 text-xs sm:text-sm font-semibold text-slate-200">
+                    <div class="grid grid-cols-12 gap-2 py-3.5 px-2 sm:px-3 items-center hover:bg-slate-800/30 rounded-xl transition-colors">
+                        <div class="col-span-6 text-left text-slate-300">Server Data Leak Risk</div>
+                        <div class="col-span-3 text-center text-rose-400 font-bold flex items-center justify-center gap-1">
+                            <i class="fas fa-xmark text-rose-500"></i> <span class="hidden xs:inline text-[11px]">HIGH</span>
+                        </div>
+                        <div class="col-span-3 text-right text-emerald-400 font-bold flex items-center justify-end gap-1">
+                            <i class="fas fa-shield-check text-emerald-400"></i> <span class="text-[11px] sm:text-xs">ZERO</span>
+                        </div>
                     </div>
-                    <div class="flex justify-between items-center p-3 rounded-xl bg-slate-800/40">
-                        <span class="text-slate-400">Internet Connection Required</span>
-                        <span class="text-emerald-400 font-bold flex items-center gap-1"><i class="fas fa-check"></i> NO (Offline)</span>
+
+                    <div class="grid grid-cols-12 gap-2 py-3.5 px-2 sm:px-3 items-center hover:bg-slate-800/30 rounded-xl transition-colors">
+                        <div class="col-span-6 text-left text-slate-300">Requires Internet Connection</div>
+                        <div class="col-span-3 text-center text-rose-400 font-bold flex items-center justify-center gap-1">
+                            <i class="fas fa-wifi text-rose-400"></i> <span class="hidden xs:inline text-[11px]">YES</span>
+                        </div>
+                        <div class="col-span-3 text-right text-emerald-400 font-bold flex items-center justify-end gap-1">
+                            <i class="fas fa-wifi-slash text-emerald-400"></i> <span class="text-[11px] sm:text-xs">NO</span>
+                        </div>
                     </div>
-                    <div class="flex justify-between items-center p-3 rounded-xl bg-slate-800/40">
-                        <span class="text-slate-400">App Disguise Support</span>
-                        <span class="text-emerald-400 font-bold flex items-center gap-1"><i class="fas fa-calculator"></i> Calculator Mode</span>
+
+                    <div class="grid grid-cols-12 gap-2 py-3.5 px-2 sm:px-3 items-center hover:bg-slate-800/30 rounded-xl transition-colors">
+                        <div class="col-span-6 text-left text-slate-300">Calculator Disguise Mode</div>
+                        <div class="col-span-3 text-center text-slate-500 font-bold flex items-center justify-center gap-1">
+                            <i class="fas fa-minus text-slate-600"></i> <span class="hidden xs:inline text-[11px]">NO</span>
+                        </div>
+                        <div class="col-span-3 text-right text-emerald-400 font-bold flex items-center justify-end gap-1">
+                            <i class="fas fa-calculator text-emerald-400"></i> <span class="text-[11px] sm:text-xs">YES</span>
+                        </div>
                     </div>
-                    <div class="flex justify-between items-center p-3 rounded-xl bg-slate-800/40">
-                        <span class="text-slate-400">AI Privacy Guarantee</span>
-                        <span class="text-emerald-400 font-bold flex items-center gap-1"><i class="fas fa-robot"></i> 100% On-Device</span>
+
+                    <div class="grid grid-cols-12 gap-2 py-3.5 px-2 sm:px-3 items-center hover:bg-slate-800/30 rounded-xl transition-colors">
+                        <div class="col-span-6 text-left text-slate-300">100% On-Device Local AI</div>
+                        <div class="col-span-3 text-center text-slate-500 font-bold flex items-center justify-center gap-1">
+                            <i class="fas fa-minus text-slate-600"></i> <span class="hidden xs:inline text-[11px]">NO</span>
+                        </div>
+                        <div class="col-span-3 text-right text-emerald-400 font-bold flex items-center justify-end gap-1">
+                            <i class="fas fa-brain text-emerald-400"></i> <span class="text-[11px] sm:text-xs">YES</span>
+                        </div>
                     </div>
-                    <div class="flex justify-between items-center p-3 rounded-xl bg-slate-800/40">
-                        <span class="text-slate-400">Monthly Cloud Subscription</span>
-                        <span class="text-emerald-400 font-bold flex items-center gap-1"><i class="fas fa-coins"></i> FREE / Local</span>
+
+                    <div class="grid grid-cols-12 gap-2 py-3.5 px-2 sm:px-3 items-center hover:bg-slate-800/30 rounded-xl transition-colors">
+                        <div class="col-span-6 text-left text-slate-300">Monthly Subscription Fee</div>
+                        <div class="col-span-3 text-center text-rose-400 font-bold flex items-center justify-center gap-1">
+                            <i class="fas fa-coins text-rose-400"></i> <span class="hidden xs:inline text-[11px]">$$$</span>
+                        </div>
+                        <div class="col-span-3 text-right text-emerald-400 font-bold flex items-center justify-end gap-1">
+                            <i class="fas fa-circle-check text-emerald-400"></i> <span class="text-[11px] sm:text-xs">FREE</span>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -494,8 +552,13 @@
             </p>
 
             <div class="flex flex-col sm:flex-row justify-center items-center gap-4">
-                <a href="https://play.google.com/store/apps/details?id=com.simplethings.vault" class="hover:scale-105 transition-transform">
-                    <img src="https://play.google.com/intl/en_us/badges/static/images/badges/en_badge_web_generic.png" alt="Get Vault: Hide Photos, Passwords on Google Play" class="h-20">
+                <a href="https://play.google.com/store/apps/details?id=com.simplethings.vault" class="w-full sm:w-auto group inline-flex items-center justify-center gap-3 px-8 py-4 rounded-2xl bg-gradient-to-r from-blue-600 via-indigo-600 to-purple-600 hover:from-blue-500 hover:to-purple-500 text-white font-extrabold text-base transition-all shadow-xl shadow-blue-600/30 hover:shadow-blue-500/50 hover:scale-[1.02] active:scale-95 border border-blue-400/30">
+                    <i class="fab fa-google-play text-2xl group-hover:rotate-6 transition-transform"></i>
+                    <div class="flex flex-col text-left leading-tight">
+                        <span class="text-[10px] text-blue-200 uppercase tracking-widest font-bold">Free Download</span>
+                        <span class="text-lg font-black tracking-tight">Get Vault on Google Play</span>
+                    </div>
+                    <i class="fas fa-arrow-right text-sm ml-1 group-hover:translate-x-1 transition-transform"></i>
                 </a>
             </div>
         </div>
@@ -507,7 +570,7 @@
     <div class="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center gap-8">
         <div class="flex flex-col items-center md:items-start text-center md:text-left">
             <div class="flex items-center gap-3 mb-2">
-                <i class="fas fa-shield-halved text-blue-500 text-xl"></i>
+                <img src="img_1.png" alt="Vault Logo" class="w-10 h-10 rounded-2xl object-cover border border-blue-500/40 shadow-md shrink-0">
                 <span class="font-black text-lg brand-font gradient-text">Vault: Hide Photos, Passwords</span>
             </div>
             <p class="text-slate-500 text-xs">Secure. Private. Smart. 100% Local Air-Gapped Storage.</p>
