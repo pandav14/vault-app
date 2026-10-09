@@ -2,130 +2,162 @@
 <html lang="en" class="scroll-smooth">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <title>Vault: Hide Photos, Passwords - Calculator Vault & Secure AI Gallery</title>
     <meta name="description" content="Vault: Hide Photos, Passwords is the ultimate 100% offline privacy vault for Android. Hide photos & videos, lock passwords with system autofill, disguise as a real calculator, and edit media with local AI.">
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700;800&family=Plus+Jakarta+Sans:wght@700;800&display=swap');
-        body { font-family: 'Manrope', sans-serif; background-color: #020617; color: #e2e8f0; }
+        body { font-family: 'Manrope', sans-serif; background-color: #020617; color: #e2e8f0; -webkit-tap-highlight-color: transparent; }
         .brand-font { font-family: 'Plus Jakarta Sans', sans-serif; }
         .gradient-text { background: linear-gradient(135deg, #60a5fa 0%, #a78bfa 50%, #f43f5e 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
-        .gradient-border { border: 1px solid rgba(255, 255, 255, 0.1); background: linear-gradient(180deg, rgba(30, 41, 59, 0.6) 0%, rgba(15, 23, 42, 0.8) 100%); }
-        .feature-box { background: rgba(30, 41, 59, 0.4); border: 1px solid rgba(51, 65, 85, 0.5); backdrop-filter: blur(16px); transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1); }
-        .feature-box:hover { border-color: #3b82f6; transform: translateY(-6px); box-shadow: 0 20px 40px -20px rgba(59, 130, 246, 0.3); }
-        .hero-glow { position: absolute; top: -10%; left: 50%; transform: translateX(-50%); width: 85%; height: 70%; background: radial-gradient(circle, rgba(59, 130, 246, 0.18) 0%, rgba(147, 51, 234, 0.08) 45%, transparent 70%); z-index: -1; pointer-events: none; }
-        .badge-glow { box-shadow: 0 0 15px rgba(59, 130, 246, 0.25); }
-        /* Hide scrollbar for Chrome, Safari and Opera */
+        .gradient-border { border: 1px solid rgba(255, 255, 255, 0.08); background: linear-gradient(180deg, rgba(30, 41, 59, 0.5) 0%, rgba(15, 23, 42, 0.75) 100%); }
+        .feature-box { background: rgba(30, 41, 59, 0.35); border: 1px solid rgba(51, 65, 85, 0.45); backdrop-filter: blur(16px); transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1); }
+        .feature-box:hover { border-color: #3b82f6; transform: translateY(-4px); box-shadow: 0 16px 32px -16px rgba(59, 130, 246, 0.25); }
+        .hero-glow { position: absolute; top: -5%; left: 50%; transform: translateX(-50%); width: 95%; height: 60%; background: radial-gradient(circle, rgba(59, 130, 246, 0.15) 0%, rgba(147, 51, 234, 0.07) 45%, transparent 70%); z-index: -1; pointer-events: none; }
+        .badge-glow { box-shadow: 0 0 12px rgba(59, 130, 246, 0.2); }
         .no-scrollbar::-webkit-scrollbar { display: none; }
-        /* Hide scrollbar for IE, Edge and Firefox */
         .no-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
+        .tab-btn.active { background-color: #2563eb; color: #ffffff; border-color: #3b82f6; }
+        .touch-scroll { -webkit-overflow-scrolling: touch; }
     </style>
 </head>
 <body class="text-slate-200 antialiased selection:bg-blue-500 selection:text-white">
 
 <div class="hero-glow"></div>
 
-<!-- Sticky Navigation Bar Optimized for Mobile, Tablet & Desktop -->
-<nav class="sticky top-0 z-50 bg-[#020617]/90 backdrop-blur-md border-b border-slate-800/80 transition-all">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-3.5 flex flex-wrap justify-between items-center gap-4">
-        <a href="#" class="flex items-center gap-3 group shrink-0">
-            <img src="img_1.png" alt="Vault: Hide Photos, Passwords Logo" class="w-10 h-10 sm:w-11 sm:h-11 rounded-2xl object-cover border border-blue-500/40 shadow-md shadow-blue-600/30 group-hover:scale-105 transition-transform shrink-0">
-            <div class="flex flex-col">
-                <span class="text-lg sm:text-xl font-extrabold tracking-tight brand-font gradient-text">Vault: Hide Photos, Passwords</span>
-                <span class="text-[10px] text-slate-400 font-bold uppercase tracking-widest">100% Offline • Calculator Disguise • AI Vault</span>
+<!-- Navigation Bar (Spacious Layout) -->
+<nav class="sticky top-0 z-50 bg-[#020617]/95 backdrop-blur-md border-b border-slate-800/80 transition-all">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-3.5 flex items-center justify-between gap-3">
+        <a href="#" class="flex items-center gap-2.5 group shrink-0 min-w-0">
+            <img src="img_1.png" alt="Vault Logo" class="w-8 h-8 sm:w-9 sm:h-9 rounded-xl object-cover border border-blue-500/40 shadow-sm group-hover:scale-105 transition-transform shrink-0">
+            <div class="flex flex-col min-w-0">
+                <span class="text-sm sm:text-base font-extrabold tracking-tight brand-font gradient-text truncate">Vault: Hide Photos & Passwords</span>
+                <span class="text-[8px] sm:text-[9px] text-slate-400 font-bold uppercase tracking-wider truncate">100% Offline • Calculator Disguise</span>
             </div>
         </a>
 
-        <!-- Landscape & Tablet Responsive Header Navigation -->
-        <div class="hidden sm:flex items-center gap-3 md:gap-5 lg:gap-8 text-xs md:text-sm font-semibold text-slate-300 overflow-x-auto py-1 no-scrollbar">
+        <!-- Desktop Navigation Links -->
+        <div class="hidden lg:flex items-center gap-6 text-xs font-semibold text-slate-300 overflow-x-auto py-1 no-scrollbar">
             <a href="#photo-vault" class="hover:text-blue-400 transition-colors whitespace-nowrap flex items-center gap-1.5"><i class="fas fa-images text-blue-400"></i>Photo Vault</a>
             <a href="#passwords" class="hover:text-blue-400 transition-colors whitespace-nowrap flex items-center gap-1.5"><i class="fas fa-key text-emerald-400"></i>Autofill</a>
-            <a href="#stealth" class="hover:text-blue-400 transition-colors whitespace-nowrap flex items-center gap-1.5"><i class="fas fa-calculator text-indigo-400"></i>Stealth Calculator</a>
-            <a href="#themes" class="hover:text-blue-400 transition-colors whitespace-nowrap flex items-center gap-1.5"><i class="fas fa-palette text-pink-400"></i>Themes</a>
+            <a href="#stealth" class="hover:text-blue-400 transition-colors whitespace-nowrap flex items-center gap-1.5"><i class="fas fa-calculator text-indigo-400"></i>Stealth</a>
+            <a href="#layouts-themes" class="hover:text-blue-400 transition-colors whitespace-nowrap flex items-center gap-1.5"><i class="fas fa-palette text-pink-400"></i>Layouts</a>
             <a href="#ai-assistant" class="hover:text-blue-400 transition-colors whitespace-nowrap flex items-center gap-1.5"><i class="fas fa-brain text-purple-400"></i>Local AI</a>
+            <a href="#quick-start" class="hover:text-blue-400 transition-colors whitespace-nowrap flex items-center gap-1.5"><i class="fas fa-bolt text-amber-400"></i>Guide</a>
             <a href="#faq" class="hover:text-blue-400 transition-colors whitespace-nowrap flex items-center gap-1.5"><i class="fas fa-circle-question text-slate-400"></i>FAQ</a>
         </div>
 
-        <a href="https://play.google.com/store/apps/details?id=com.simplethings.vault" class="hidden sm:flex bg-slate-900/90 hover:bg-slate-800 text-white px-4 py-2 rounded-full border border-blue-500/40 hover:border-blue-400 transition-all shadow-md shadow-blue-500/10 items-center gap-2.5 shrink-0 active:scale-95 group">
-            <i class="fab fa-google-play text-blue-400 group-hover:scale-110 transition-transform"></i>
+        <!-- Official Authentic Google Play Header Badge -->
+        <a href="https://play.google.com/store/apps/details?id=com.simplethings.vault" class="inline-flex items-center gap-2 px-3 py-1.5 sm:px-3.5 sm:py-2 rounded-xl bg-slate-900 hover:bg-slate-800 border border-slate-700/80 hover:border-blue-500/60 transition-all shadow-md active:scale-95 group shrink-0">
+            <svg class="w-4 h-4 sm:w-5 sm:h-5 shrink-0" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M3.609 1.814L13.792 12 3.61 22.186A1.66 1.66 0 0 1 3 20.978V3.022c0-.46.183-.902.609-1.208z" fill="#0086F8"/>
+                <path d="M17.208 8.584l-3.416 3.416 3.416 3.416 3.864-2.196c.72-.41.72-1.08 0-1.49l-3.864-3.146z" fill="#FFD600"/>
+                <path d="M3.609 1.814L13.792 12l3.416-3.416L5.358.828c-.538-.306-1.21-.204-1.749.186z" fill="#00E676"/>
+                <path d="M3.61 22.186L13.792 12l3.416 3.416-11.85 7.57a1.68 1.68 0 0 1-1.749.186z" fill="#FF3D00"/>
+            </svg>
             <div class="flex flex-col text-left leading-none">
-                <span class="text-[9px] text-slate-400 font-bold uppercase tracking-wider">GET IT ON</span>
-                <span class="text-xs font-black tracking-tight text-white">Google Play</span>
+                <span class="text-[7px] sm:text-[8px] text-slate-400 font-bold uppercase tracking-wider">GET IT ON</span>
+                <span class="text-[10px] sm:text-xs font-black tracking-tight text-white group-hover:text-blue-400 transition-colors">Google Play</span>
             </div>
         </a>
+    </div>
+
+    <!-- Mobile Horizontal Quick Shortcuts Bar -->
+    <div class="lg:hidden flex items-center gap-3.5 px-4 py-2 border-t border-slate-800/60 overflow-x-auto no-scrollbar text-[11px] font-bold text-slate-300 touch-scroll">
+        <a href="#photo-vault" class="hover:text-blue-400 whitespace-nowrap flex items-center gap-1"><i class="fas fa-images text-blue-400 text-[10px]"></i>Vault</a>
+        <span class="text-slate-800">•</span>
+        <a href="#passwords" class="hover:text-blue-400 whitespace-nowrap flex items-center gap-1"><i class="fas fa-key text-emerald-400 text-[10px]"></i>Autofill</a>
+        <span class="text-slate-800">•</span>
+        <a href="#stealth" class="hover:text-blue-400 whitespace-nowrap flex items-center gap-1"><i class="fas fa-calculator text-indigo-400 text-[10px]"></i>Calculator</a>
+        <span class="text-slate-800">•</span>
+        <a href="#ai-assistant" class="hover:text-blue-400 whitespace-nowrap flex items-center gap-1"><i class="fas fa-brain text-purple-400 text-[10px]"></i>AI</a>
+        <span class="text-slate-800">•</span>
+        <a href="#quick-start" class="hover:text-blue-400 whitespace-nowrap flex items-center gap-1"><i class="fas fa-bolt text-amber-400 text-[10px]"></i>Guide</a>
+        <span class="text-slate-800">•</span>
+        <a href="#faq" class="hover:text-blue-400 whitespace-nowrap flex items-center gap-1"><i class="fas fa-circle-question text-slate-400 text-[10px]"></i>FAQ</a>
     </div>
 </nav>
 
-<!-- Hero Section -->
-<header class="max-w-7xl mx-auto px-4 sm:px-6 pt-10 sm:pt-16 md:pt-20 pb-16 sm:pb-24 text-center relative">
-    <div class="inline-flex items-center gap-2 px-3.5 sm:px-4 py-1.5 sm:py-2 rounded-full bg-blue-500/10 border border-blue-500/20 text-blue-400 text-[10px] sm:text-xs font-bold uppercase tracking-widest mb-6 sm:mb-8 badge-glow max-w-full truncate">
-        <span class="w-2 h-2 rounded-full bg-blue-400 animate-pulse shrink-0"></span>
-        <span class="truncate">Privacy First • 100% Air-Gapped Security • Calculator Disguise • Local AI</span>
+<!-- Hero Section (Airy, Generous Top Padding to Remove Compressed Look) -->
+<header class="max-w-7xl mx-auto px-4 sm:px-6 pt-10 sm:pt-16 md:pt-20 pb-12 sm:pb-20 text-center relative">
+    <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-blue-500/10 border border-blue-500/20 text-blue-400 text-[10px] sm:text-[11px] font-bold uppercase tracking-wider mb-6 sm:mb-8 badge-glow max-w-full truncate">
+        <span class="w-1.5 h-1.5 rounded-full bg-blue-400 animate-pulse shrink-0"></span>
+        <span class="truncate">Air-Gapped Privacy • Zero Internet Access • Calculator Disguise • Local AI</span>
     </div>
 
-    <!-- Improved, Scaled Heading -->
-    <h1 class="text-3xl sm:text-5xl md:text-6xl font-black mb-6 leading-tight tracking-tight max-w-4xl mx-auto">
+    <h1 class="text-2xl sm:text-5xl md:text-6xl font-black mb-5 sm:mb-7 leading-[1.2] sm:leading-[1.1] tracking-tight max-w-4xl mx-auto">
         Vault: <span class="gradient-text">Hide Photos & Passwords</span><br>
-        <span class="text-slate-100">Calculator Vault & Encrypted Local Storage</span>
+        <span class="text-slate-100">Calculator Vault & Encrypted Storage</span>
     </h1>
 
-    <p class="text-sm sm:text-lg md:text-xl text-slate-400 max-w-3xl mx-auto mb-8 sm:mb-10 leading-relaxed">
-        The ultimate 100% offline privacy app for Android. Hide sensitive photos & videos behind AES-256 encryption, manage passwords with system autofill, disguise your vault as a real working calculator, trim media with loss-free local AI, and scan documents with zero cloud risk.
+    <p class="text-xs sm:text-base md:text-lg text-slate-400 max-w-2xl sm:max-w-3xl mx-auto mb-8 sm:mb-10 leading-relaxed">
+        The complete 100% offline privacy suite for Android. Protect sensitive photos & videos behind AES-256 encryption, autofill credentials, camouflage your vault as a working calculator, run offline LLM models, and scan ID cards—all zero-cloud with zero internet permissions.
     </p>
 
-    <!-- Elevated CTA Buttons & Trust Signals -->
-    <div class="flex flex-col sm:flex-row justify-center items-center gap-4 sm:gap-5 mb-6">
-        <a href="https://play.google.com/store/apps/details?id=com.simplethings.vault" class="w-full sm:w-auto group relative inline-flex items-center justify-center gap-3 px-8 py-4 rounded-2xl bg-gradient-to-r from-blue-600 via-indigo-600 to-purple-600 hover:from-blue-500 hover:to-purple-500 text-white font-extrabold text-base transition-all shadow-xl shadow-blue-600/30 hover:shadow-blue-500/50 hover:scale-[1.02] active:scale-95 border border-blue-400/30">
-            <i class="fab fa-google-play text-2xl group-hover:rotate-6 transition-transform"></i>
+    <!-- Perfectly Matched Hero CTA Buttons -->
+    <div class="flex flex-col sm:flex-row justify-center items-center gap-3.5 mb-8 sm:mb-12">
+        <!-- Official Authentic Google Play Dark Store Badge -->
+        <a href="https://play.google.com/store/apps/details?id=com.simplethings.vault" class="inline-flex items-center gap-3 px-5 py-2.5 sm:px-6 sm:py-3 rounded-2xl bg-slate-950 hover:bg-slate-900 border border-slate-700/80 hover:border-blue-500/80 shadow-lg shadow-black/50 hover:shadow-blue-500/20 transition-all active:scale-95 group shrink-0">
+            <svg class="w-6 h-6 sm:w-7 sm:h-7 shrink-0 group-hover:scale-110 transition-transform" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M3.609 1.814L13.792 12 3.61 22.186A1.66 1.66 0 0 1 3 20.978V3.022c0-.46.183-.902.609-1.208z" fill="#0086F8"/>
+                <path d="M17.208 8.584l-3.416 3.416 3.416 3.416 3.864-2.196c.72-.41.72-1.08 0-1.49l-3.864-3.146z" fill="#FFD600"/>
+                <path d="M3.609 1.814L13.792 12l3.416-3.416L5.358.828c-.538-.306-1.21-.204-1.749.186z" fill="#00E676"/>
+                <path d="M3.61 22.186L13.792 12l3.416 3.416-11.85 7.57a1.68 1.68 0 0 1-1.749.186z" fill="#FF3D00"/>
+            </svg>
             <div class="flex flex-col text-left leading-tight">
-                <span class="text-[10px] text-blue-200 uppercase tracking-widest font-bold">Free Download</span>
-                <span class="text-lg font-black tracking-tight">Get Vault on Google Play</span>
+                <span class="text-[9px] sm:text-[10px] text-slate-400 font-bold uppercase tracking-widest">GET IT ON</span>
+                <span class="text-sm sm:text-base font-black tracking-tight text-white group-hover:text-blue-400 transition-colors">Google Play</span>
             </div>
-            <i class="fas fa-arrow-right text-sm ml-1 group-hover:translate-x-1 transition-transform"></i>
         </a>
 
-        <a href="#features" class="w-full sm:w-auto px-7 py-4 rounded-2xl bg-slate-800/80 hover:bg-slate-700/80 border border-slate-700/60 text-slate-200 font-bold text-sm transition-all flex items-center justify-center gap-2.5 active:scale-95 shadow-md">
-            <i class="fas fa-layer-group text-blue-400"></i>
-            <span>Explore All Features</span>
+        <!-- Perfectly Matching Secondary Feature Badge Button -->
+        <a href="#features" class="inline-flex items-center gap-3 px-5 py-2.5 sm:px-6 sm:py-3 rounded-2xl bg-slate-900/90 hover:bg-slate-800 border border-slate-700/80 hover:border-blue-500/80 shadow-lg shadow-black/30 hover:shadow-blue-500/20 transition-all active:scale-95 group shrink-0">
+            <div class="w-6 h-6 sm:w-7 sm:h-7 rounded-lg bg-blue-500/10 text-blue-400 flex items-center justify-center shrink-0 border border-blue-500/20 group-hover:scale-110 transition-transform">
+                <i class="fas fa-layer-group text-xs sm:text-sm"></i>
+            </div>
+            <div class="flex flex-col text-left leading-tight">
+                <span class="text-[9px] sm:text-[10px] text-blue-400 font-bold uppercase tracking-widest">USER GUIDE</span>
+                <span class="text-sm sm:text-base font-black tracking-tight text-white group-hover:text-blue-400 transition-colors">Explore Features</span>
+            </div>
         </a>
     </div>
 
-    <!-- Trust & Conversion Micro-Bar -->
-    <div class="flex flex-wrap items-center justify-center gap-3 sm:gap-6 text-xs font-bold text-slate-400 mb-12">
-        <span class="flex items-center gap-1.5"><i class="fas fa-star text-amber-400"></i> 4.9 Rating</span>
-        <span class="text-slate-700">•</span>
-        <span class="flex items-center gap-1.5"><i class="fas fa-shield-check text-emerald-400"></i> 100% Free & Offline</span>
-        <span class="text-slate-700">•</span>
-        <span class="flex items-center gap-1.5"><i class="fas fa-lock text-blue-400"></i> AES-256 Encryption</span>
+    <!-- Trust Micro-Bar -->
+    <div class="flex flex-wrap items-center justify-center gap-2.5 sm:gap-6 text-[11px] sm:text-xs font-bold text-slate-400 mb-10 sm:mb-12">
+        <span class="flex items-center gap-1.5"><i class="fas fa-star text-amber-400 text-xs"></i> 4.9 Rating</span>
+        <span class="text-slate-800">•</span>
+        <span class="flex items-center gap-1.5"><i class="fas fa-shield-check text-emerald-400 text-xs"></i> 100% Free & Offline</span>
+        <span class="text-slate-800">•</span>
+        <span class="flex items-center gap-1.5"><i class="fas fa-lock text-blue-400 text-xs"></i> AES-256 Encryption</span>
     </div>
 
-    <!-- Trust Badges -->
-    <div class="pt-6 sm:pt-8 border-t border-slate-800/60 max-w-4xl mx-auto grid grid-cols-2 md:grid-cols-4 gap-3 sm:gap-6 text-center">
-        <div class="p-3.5 sm:p-4 rounded-xl sm:rounded-2xl bg-slate-900/40 border border-slate-800/50">
-            <div class="text-xl sm:text-2xl font-black text-blue-400 mb-1">AES-256</div>
-            <div class="text-[10px] sm:text-[11px] text-slate-400 font-bold uppercase tracking-wider">SQLCipher Database</div>
+    <!-- Key Metrics Grid -->
+    <div class="pt-6 sm:pt-8 border-t border-slate-800/60 max-w-4xl mx-auto grid grid-cols-2 sm:grid-cols-4 gap-3 text-center">
+        <div class="p-3 sm:p-4 rounded-xl bg-slate-900/40 border border-slate-800/50">
+            <div class="text-base sm:text-xl font-black text-blue-400 mb-0.5">AES-256</div>
+            <div class="text-[9px] sm:text-[10px] text-slate-400 font-bold uppercase tracking-wider">SQLite3MC Encryption</div>
         </div>
-        <div class="p-3.5 sm:p-4 rounded-xl sm:rounded-2xl bg-slate-900/40 border border-slate-800/50">
-            <div class="text-xl sm:text-2xl font-black text-indigo-400 mb-1">0 KB</div>
-            <div class="text-[10px] sm:text-[11px] text-slate-400 font-bold uppercase tracking-wider">Internet Permission</div>
+        <div class="p-3 sm:p-4 rounded-xl bg-slate-900/40 border border-slate-800/50">
+            <div class="text-base sm:text-xl font-black text-indigo-400 mb-0.5">0 KB</div>
+            <div class="text-[9px] sm:text-[10px] text-slate-400 font-bold uppercase tracking-wider">Network Permission</div>
         </div>
-        <div class="p-3.5 sm:p-4 rounded-xl sm:rounded-2xl bg-slate-900/40 border border-slate-800/50">
-            <div class="text-xl sm:text-2xl font-black text-purple-400 mb-1">LOCAL AI</div>
-            <div class="text-[10px] sm:text-[11px] text-slate-400 font-bold uppercase tracking-wider">On-Device Models</div>
+        <div class="p-3 sm:p-4 rounded-xl bg-slate-900/40 border border-slate-800/50">
+            <div class="text-base sm:text-xl font-black text-purple-400 mb-0.5">LOCAL AI</div>
+            <div class="text-[9px] sm:text-[10px] text-slate-400 font-bold uppercase tracking-wider">Offline Gemma / Phi-2</div>
         </div>
-        <div class="p-3.5 sm:p-4 rounded-xl sm:rounded-2xl bg-slate-900/40 border border-slate-800/50">
-            <div class="text-xl sm:text-2xl font-black text-emerald-400 mb-1">100%</div>
-            <div class="text-[10px] sm:text-[11px] text-slate-400 font-bold uppercase tracking-wider">Offline Control</div>
+        <div class="p-3 sm:p-4 rounded-xl bg-slate-900/40 border border-slate-800/50">
+            <div class="text-base sm:text-xl font-black text-emerald-400 mb-0.5">10 PROFILES</div>
+            <div class="text-[9px] sm:text-[10px] text-slate-400 font-bold uppercase tracking-wider">Isolated Vaults</div>
         </div>
     </div>
 
-    <!-- Hero Showcase Video -->
-    <div class="mt-12 sm:mt-16 max-w-5xl mx-auto relative group">
-        <div class="absolute -inset-1.5 bg-gradient-to-r from-blue-600 via-purple-600 to-pink-600 rounded-[2.5rem] blur-2xl opacity-35 group-hover:opacity-60 transition duration-1000 group-hover:duration-200"></div>
-        <div class="relative rounded-2xl sm:rounded-[2rem] overflow-hidden border border-slate-700/80 bg-slate-900/90 shadow-2xl p-2 sm:p-3">
-            <video autoplay loop muted playsinline controls class="w-full h-auto object-cover rounded-xl sm:rounded-[1.5rem]">
+    <!-- Hero Showcase Video Frame -->
+    <div class="mt-10 sm:mt-14 max-w-4xl mx-auto relative group">
+        <div class="absolute -inset-1 bg-gradient-to-r from-blue-600 via-purple-600 to-indigo-600 rounded-2xl sm:rounded-3xl blur-lg sm:blur-xl opacity-30 group-hover:opacity-50 transition duration-700"></div>
+        <div class="relative rounded-xl sm:rounded-2xl overflow-hidden border border-slate-700/80 bg-slate-900/90 shadow-2xl p-2 sm:p-3">
+            <video autoplay loop muted playsinline controls class="w-full h-auto object-cover rounded-lg sm:rounded-xl">
                 <source src="gemini_generated_video_0dcc3853.mp4" type="video/mp4">
                 Your browser does not support the video tag.
             </video>
@@ -133,333 +165,413 @@
     </div>
 </header>
 
-<!-- Main Features Breakdown -->
-<section id="features" class="max-w-7xl mx-auto px-6 py-20">
-    <div class="text-center max-w-3xl mx-auto mb-16">
-        <h2 class="text-3xl sm:text-5xl font-black mb-4 tracking-tight">Everything You Need to <span class="gradient-text">Protect Your Digital Life</span></h2>
-        <p class="text-slate-400 text-base sm:text-lg">Combining military-grade photo hiding, password autofill, calculator stealth disguise, custom themes, smart media editing tools, and private local AI into one powerful app.</p>
+<!-- Category Filter Tabs for Features -->
+<section id="features" class="max-w-7xl mx-auto px-4 sm:px-6 py-12 sm:py-20">
+    <div class="text-center max-w-3xl mx-auto mb-10 sm:mb-12">
+        <h2 class="text-2xl sm:text-4xl font-black mb-3 tracking-tight">Everything You Need to <span class="gradient-text">Protect Your Digital Life</span></h2>
+        <p class="text-slate-400 text-xs sm:text-base">Explore all core capabilities extracted directly from the official Vault User Manual & Feature Guide.</p>
     </div>
 
-    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+    <!-- Interactive Horizontal Touch Scroll Filter Tabs -->
+    <div class="flex items-center gap-2 mb-10 sm:mb-12 no-scrollbar overflow-x-auto pb-2 touch-scroll px-1">
+        <button onclick="filterFeatures('all')" class="tab-btn active px-4 py-2 rounded-xl text-[11px] sm:text-xs font-bold border border-slate-700 bg-slate-800/80 text-slate-300 transition-all whitespace-nowrap shrink-0">All Features</button>
+        <button onclick="filterFeatures('media')" class="tab-btn px-4 py-2 rounded-xl text-[11px] sm:text-xs font-bold border border-slate-700 bg-slate-800/80 text-slate-300 transition-all whitespace-nowrap shrink-0"><i class="fas fa-images mr-1.5 text-blue-400"></i>PhotoVault & Gallery</button>
+        <button onclick="filterFeatures('security')" class="tab-btn px-4 py-2 rounded-xl text-[11px] sm:text-xs font-bold border border-slate-700 bg-slate-800/80 text-slate-300 transition-all whitespace-nowrap shrink-0"><i class="fas fa-shield-halved mr-1.5 text-indigo-400"></i>Security & Stealth</button>
+        <button onclick="filterFeatures('passwords')" class="tab-btn px-4 py-2 rounded-xl text-[11px] sm:text-xs font-bold border border-slate-700 bg-slate-800/80 text-slate-300 transition-all whitespace-nowrap shrink-0"><i class="fas fa-key mr-1.5 text-emerald-400"></i>Passwords & Autofill</button>
+        <button onclick="filterFeatures('dashboards')" class="tab-btn px-4 py-2 rounded-xl text-[11px] sm:text-xs font-bold border border-slate-700 bg-slate-800/80 text-slate-300 transition-all whitespace-nowrap shrink-0"><i class="fas fa-palette mr-1.5 text-pink-400"></i>Layouts & Themes</button>
+        <button onclick="filterFeatures('ai')" class="tab-btn px-4 py-2 rounded-xl text-[11px] sm:text-xs font-bold border border-slate-700 bg-slate-800/80 text-slate-300 transition-all whitespace-nowrap shrink-0"><i class="fas fa-brain mr-1.5 text-purple-400"></i>On-Device AI</button>
+        <button onclick="filterFeatures('scanner')" class="tab-btn px-4 py-2 rounded-xl text-[11px] sm:text-xs font-bold border border-slate-700 bg-slate-800/80 text-slate-300 transition-all whitespace-nowrap shrink-0"><i class="fas fa-id-card mr-1.5 text-cyan-400"></i>ID Scanner & Tools</button>
+        <button onclick="filterFeatures('data')" class="tab-btn px-4 py-2 rounded-xl text-[11px] sm:text-xs font-bold border border-slate-700 bg-slate-800/80 text-slate-300 transition-all whitespace-nowrap shrink-0"><i class="fas fa-database mr-1.5 text-amber-400"></i>Backups & Profiles</button>
+    </div>
 
-        <!-- Feature 1: Photo & Video Vault & 5-Item Navigation Bar -->
-        <div id="photo-vault" class="feature-box p-8 rounded-[2rem] flex flex-col justify-between">
+    <!-- Feature Grid -->
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 sm:gap-6">
+
+        <!-- 1. PhotoVault & Media Suite -->
+        <div id="photo-vault" data-cat="media" class="feature-card feature-box p-6 rounded-2xl flex flex-col justify-between">
             <div>
-                <div class="w-14 h-14 bg-blue-500/10 text-blue-400 rounded-2xl flex items-center justify-center mb-6 text-2xl border border-blue-500/20">
+                <div class="w-11 h-11 bg-blue-500/10 text-blue-400 rounded-xl flex items-center justify-center mb-4 text-xl border border-blue-500/20">
                     <i class="fas fa-images"></i>
                 </div>
-                <h3 class="text-2xl font-bold mb-3 text-white">Photo Vault & Integrated Bottom Rail</h3>
-                <p class="text-slate-400 leading-relaxed mb-6">
-                    Securely hide private photos and videos behind AES-256 encryption. Features an integrated 5-item Bottom Navigation Rail for 1-tap switching between Gallery, Albums, Camera, People, and Memories.
+                <h3 class="text-xl font-bold mb-2 text-white">PhotoVault & Integrated Bottom Rail</h3>
+                <p class="text-slate-400 text-xs sm:text-sm leading-relaxed mb-4">
+                    Hide private photos, videos, and documents behind AES-256 encryption. Includes an integrated 5-item Bottom Navigation Rail for 1-tap switching between Gallery, Albums, Camera, People (AI face sorting), and Memories timeline.
                 </p>
             </div>
-            <ul class="space-y-2 text-xs font-semibold text-slate-300 border-t border-slate-800/80 pt-4">
-                <li class="flex items-center gap-2"><i class="fas fa-check text-blue-400"></i> 5-Item Bottom Rail (Gallery, Albums, Camera, People, Memories)</li>
-                <li class="flex items-center gap-2"><i class="fas fa-check text-blue-400"></i> Secret Snap Quick Camera & Doc Scanner</li>
-                <li class="flex items-center gap-2"><i class="fas fa-check text-blue-400"></i> AI Face Clustering & Timeline Memories</li>
+            <ul class="space-y-1.5 text-xs font-semibold text-slate-300 border-t border-slate-800/80 pt-3">
+                <li class="flex items-center gap-2"><i class="fas fa-check text-blue-400 text-[10px]"></i> 5-Item Rail (Gallery, Albums, Camera, People, Memories)</li>
+                <li class="flex items-center gap-2"><i class="fas fa-check text-blue-400 text-[10px]"></i> Secret Snap (Encrypted camera capture directly to vault)</li>
+                <li class="flex items-center gap-2"><i class="fas fa-check text-blue-400 text-[10px]"></i> Hold to Peek Decryption with Privacy Blur Shield</li>
             </ul>
         </div>
 
-        <!-- Feature 2: Passwords & Autofill -->
-        <div id="passwords" class="feature-box p-8 rounded-[2rem] flex flex-col justify-between">
+        <!-- 2. Stealth Calculator Disguise -->
+        <div id="stealth" data-cat="security" class="feature-card feature-box p-6 rounded-2xl flex flex-col justify-between">
             <div>
-                <div class="w-14 h-14 bg-emerald-500/10 text-emerald-400 rounded-2xl flex items-center justify-center mb-6 text-2xl border border-emerald-500/20">
-                    <i class="fas fa-key"></i>
-                </div>
-                <h3 class="text-2xl font-bold mb-3 text-white">Password Manager & Autofill</h3>
-                <p class="text-slate-400 leading-relaxed mb-6">
-                    Store logins, payment cards, bank accounts, and private notes. Includes native Android Autofill Service and built-in 2FA / TOTP authenticator.
-                </p>
-            </div>
-            <ul class="space-y-2 text-xs font-semibold text-slate-300 border-t border-slate-800/80 pt-4">
-                <li class="flex items-center gap-2"><i class="fas fa-check text-emerald-400"></i> Android System Autofill Service</li>
-                <li class="flex items-center gap-2"><i class="fas fa-check text-emerald-400"></i> Built-in 2FA / TOTP Generator</li>
-                <li class="flex items-center gap-2"><i class="fas fa-check text-emerald-400"></i> Password Generator & Security Health Audit</li>
-            </ul>
-        </div>
-
-        <!-- Feature 3: Calculator Stealth -->
-        <div id="stealth" class="feature-box p-8 rounded-[2rem] flex flex-col justify-between">
-            <div>
-                <div class="w-14 h-14 bg-indigo-500/10 text-indigo-400 rounded-2xl flex items-center justify-center mb-6 text-2xl border border-indigo-500/20">
+                <div class="w-11 h-11 bg-indigo-500/10 text-indigo-400 rounded-xl flex items-center justify-center mb-4 text-xl border border-indigo-500/20">
                     <i class="fas fa-calculator"></i>
                 </div>
-                <h3 class="text-2xl font-bold mb-3 text-white">Calculator Stealth Disguise</h3>
-                <p class="text-slate-400 leading-relaxed mb-6">
-                    Complete camouflage. Disguise Vault as a fully functional calculator on your home screen. Access your hidden vault only by entering your secret equation.
+                <h3 class="text-xl font-bold mb-2 text-white">Calculator Stealth & Decoy Vault</h3>
+                <p class="text-slate-400 text-xs sm:text-sm leading-relaxed mb-4">
+                    Disguise Vault as a fully functional calculator on your home screen. Access your vault by entering your secret PIN math sequence (e.g., 123+456=). Set up Decoy Vaults with dummy records for plausible deniability.
                 </p>
             </div>
-            <ul class="space-y-2 text-xs font-semibold text-slate-300 border-t border-slate-800/80 pt-4">
-                <li class="flex items-center gap-2"><i class="fas fa-check text-indigo-400"></i> Custom Calculator Icon & Working UI</li>
-                <li class="flex items-center gap-2"><i class="fas fa-check text-indigo-400"></i> Secret PIN / Formula Unlock</li>
-                <li class="flex items-center gap-2"><i class="fas fa-check text-indigo-400"></i> Stealth App Switching</li>
+            <ul class="space-y-1.5 text-xs font-semibold text-slate-300 border-t border-slate-800/80 pt-3">
+                <li class="flex items-center gap-2"><i class="fas fa-check text-indigo-400 text-[10px]"></i> Secret PIN Equation Keypad Entry</li>
+                <li class="flex items-center gap-2"><i class="fas fa-check text-indigo-400 text-[10px]"></i> Decoy Vault with Secondary Fake Master Password</li>
+                <li class="flex items-center gap-2"><i class="fas fa-check text-indigo-400 text-[10px]"></i> Disguise App Icon & Functional Calculator Keypad</li>
             </ul>
         </div>
 
-        <!-- Feature 4: Themes & Appearance Customization -->
-        <div id="themes" class="feature-box p-8 rounded-[2rem] flex flex-col justify-between">
+        <!-- 3. Passwords & System Autofill -->
+        <div id="passwords" data-cat="passwords" class="feature-card feature-box p-6 rounded-2xl flex flex-col justify-between">
             <div>
-                <div class="w-14 h-14 bg-pink-500/10 text-pink-400 rounded-2xl flex items-center justify-center mb-6 text-2xl border border-pink-500/20">
+                <div class="w-11 h-11 bg-emerald-500/10 text-emerald-400 rounded-xl flex items-center justify-center mb-4 text-xl border border-emerald-500/20">
+                    <i class="fas fa-key"></i>
+                </div>
+                <h3 class="text-xl font-bold mb-2 text-white">Password Manager & System Autofill</h3>
+                <p class="text-slate-400 text-xs sm:text-sm leading-relaxed mb-4">
+                    Store passwords, credit cards, bank accounts, notes, and WiFi credentials. Uses native Android Autofill Service in Chrome and apps, built-in 2FA/TOTP authenticator, and 30-second clipboard auto-clear.
+                </p>
+            </div>
+            <ul class="space-y-1.5 text-xs font-semibold text-slate-300 border-t border-slate-800/80 pt-3">
+                <li class="flex items-center gap-2"><i class="fas fa-check text-emerald-400 text-[10px]"></i> System Autofill & Save Offer Toggles</li>
+                <li class="flex items-center gap-2"><i class="fas fa-check text-emerald-400 text-[10px]"></i> Built-in 2FA / TOTP Authenticator Generator</li>
+                <li class="flex items-center gap-2"><i class="fas fa-check text-emerald-400 text-[10px]"></i> Clipboard Auto-Clear (30 seconds) & Encrypted QR Share</li>
+            </ul>
+        </div>
+
+        <!-- 4. Dashboard Layouts & Custom Themes -->
+        <div id="layouts-themes" data-cat="dashboards" class="feature-card feature-box p-6 rounded-2xl flex flex-col justify-between">
+            <div>
+                <div class="w-11 h-11 bg-pink-500/10 text-pink-400 rounded-xl flex items-center justify-center mb-4 text-xl border border-pink-500/20">
                     <i class="fas fa-palette"></i>
                 </div>
-                <h3 class="text-2xl font-bold mb-3 text-white">Custom Themes & Icon Shapes</h3>
-                <p class="text-slate-400 leading-relaxed mb-6">
-                    Personalize your vault interface with custom themes (Modern Warm, Midnight Dark, Spiderman, Classic). Light theme features high-contrast white icon container backgrounds.
+                <h3 class="text-xl font-bold mb-2 text-white">4 Dashboards & 5 Custom Themes</h3>
+                <p class="text-slate-400 text-xs sm:text-sm leading-relaxed mb-4">
+                    Choose between Bento Grid, Dual-Hub (1-tap split-view switcher), Modern, and Classic layouts. Switch between 5 Themes (Modern Warm, Midnight Dark, Spiderman, High-Contrast Light with white containers) and custom icon shapes.
                 </p>
             </div>
-            <ul class="space-y-2 text-xs font-semibold text-slate-300 border-t border-slate-800/80 pt-4">
-                <li class="flex items-center gap-2"><i class="fas fa-check text-pink-400"></i> High-Contrast Light Theme White Icon Containers</li>
-                <li class="flex items-center gap-2"><i class="fas fa-check text-pink-400"></i> Custom Category Shapes (Rounded, Square, Circle, Squircle)</li>
-                <li class="flex items-center gap-2"><i class="fas fa-check text-pink-400"></i> Modern Dashboard & Quick Access Cards</li>
+            <ul class="space-y-1.5 text-xs font-semibold text-slate-300 border-t border-slate-800/80 pt-3">
+                <li class="flex items-center gap-2"><i class="fas fa-check text-pink-400 text-[10px]"></i> Bento Grid Layout & Dual-Hub Split View</li>
+                <li class="flex items-center gap-2"><i class="fas fa-check text-pink-400 text-[10px]"></i> High-Contrast Light Theme White Icon Containers</li>
+                <li class="flex items-center gap-2"><i class="fas fa-check text-pink-400 text-[10px]"></i> Shapes: Squircle, Rounded, Square, Circular</li>
             </ul>
         </div>
 
-        <!-- Feature 5: Intruder Selfie & Decoy -->
-        <div class="feature-box p-8 rounded-[2rem] flex flex-col justify-between">
+        <!-- 5. Intruder Selfie & Anti-Snoop Security -->
+        <div data-cat="security" class="feature-card feature-box p-6 rounded-2xl flex flex-col justify-between">
             <div>
-                <div class="w-14 h-14 bg-rose-500/10 text-rose-400 rounded-2xl flex items-center justify-center mb-6 text-2xl border border-rose-500/20">
+                <div class="w-11 h-11 bg-rose-500/10 text-rose-400 rounded-xl flex items-center justify-center mb-4 text-xl border border-rose-500/20">
                     <i class="fas fa-shield-cat"></i>
                 </div>
-                <h3 class="text-2xl font-bold mb-3 text-white">Intruder Selfie & Decoy Vault</h3>
-                <p class="text-slate-400 leading-relaxed mb-6">
-                    Catch snoopers red-handed. Vault automatically snaps a photo of anyone entering a wrong password. Set up Decoy Profiles for plausible deniability.
+                <h3 class="text-xl font-bold mb-2 text-white">Intruder Selfie & Security Radar</h3>
+                <p class="text-slate-400 text-xs sm:text-sm leading-relaxed mb-4">
+                    Catches snoopers red-handed with silent front-camera selfies on 3 failed unlock attempts. Includes Screenshot Protection, Lock on Background, 12-Word Master Key Recovery Phrase, and real-time password health radar audits.
                 </p>
             </div>
-            <ul class="space-y-2 text-xs font-semibold text-slate-300 border-t border-slate-800/80 pt-4">
-                <li class="flex items-center gap-2"><i class="fas fa-check text-rose-400"></i> Wrong Password Break-in Selfie</li>
-                <li class="flex items-center gap-2"><i class="fas fa-check text-rose-400"></i> Fake Decoy Profile Password</li>
-                <li class="flex items-center gap-2"><i class="fas fa-check text-rose-400"></i> Timestamped Intruder Audit Logs</li>
+            <ul class="space-y-1.5 text-xs font-semibold text-slate-300 border-t border-slate-800/80 pt-3">
+                <li class="flex items-center gap-2"><i class="fas fa-check text-rose-400 text-[10px]"></i> Silent Intruder Selfie & Timestamped Break-in Logs</li>
+                <li class="flex items-center gap-2"><i class="fas fa-check text-rose-400 text-[10px]"></i> Screenshot Protection & Lock on App Switch</li>
+                <li class="flex items-center gap-2"><i class="fas fa-check text-rose-400 text-[10px]"></i> 12-Word Zero-Knowledge Master Recovery Phrase</li>
             </ul>
         </div>
 
-        <!-- Feature 6: On-Device AI Assistant -->
-        <div id="ai-assistant" class="feature-box p-8 rounded-[2rem] flex flex-col justify-between">
+        <!-- 6. Private On-Device AI (BYOM) -->
+        <div id="ai-assistant" data-cat="ai" class="feature-card feature-box p-6 rounded-2xl flex flex-col justify-between">
             <div>
-                <div class="w-14 h-14 bg-purple-500/10 text-purple-400 rounded-2xl flex items-center justify-center mb-6 text-2xl border border-purple-500/20">
+                <div class="w-11 h-11 bg-purple-500/10 text-purple-400 rounded-xl flex items-center justify-center mb-4 text-xl border border-purple-500/20">
                     <i class="fas fa-brain"></i>
                 </div>
-                <h3 class="text-2xl font-bold mb-3 text-white">Private On-Device AI (BYOM)</h3>
-                <p class="text-slate-400 leading-relaxed mb-6">
-                    Chat with your vault securely. Plug in local LLMs like Gemma or Phi-2 via MediaPipe. Ask questions, audit passwords, and manage items 100% offline.
+                <h3 class="text-xl font-bold mb-2 text-white">Private On-Device AI (BYOM)</h3>
+                <p class="text-slate-400 text-xs sm:text-sm leading-relaxed mb-4">
+                    Chat with your vault completely offline. Select custom LLM model files (`.bin` / `.litertlm` for MediaPipe, e.g., Gemma 2B or Phi-2) or use the standard lightweight RAG engine. Executed 100% in local RAM.
                 </p>
             </div>
-            <ul class="space-y-2 text-xs font-semibold text-slate-300 border-t border-slate-800/80 pt-4">
-                <li class="flex items-center gap-2"><i class="fas fa-check text-purple-400"></i> Bring Your Own Model (Gemma/Phi-2)</li>
-                <li class="flex items-center gap-2"><i class="fas fa-check text-purple-400"></i> Zero Network AI Queries</li>
-                <li class="flex items-center gap-2"><i class="fas fa-check text-purple-400"></i> Automated Expiry & Security Audits</li>
+            <ul class="space-y-1.5 text-xs font-semibold text-slate-300 border-t border-slate-800/80 pt-3">
+                <li class="flex items-center gap-2"><i class="fas fa-check text-purple-400 text-[10px]"></i> Bring Your Own Model (Gemma 2B / Phi-2)</li>
+                <li class="flex items-center gap-2"><i class="fas fa-check text-purple-400 text-[10px]"></i> Zero Network Queries or API Keys</li>
+                <li class="flex items-center gap-2"><i class="fas fa-check text-purple-400 text-[10px]"></i> Automated Expiry, Security & Document RAG Audits</li>
             </ul>
         </div>
 
-        <!-- Feature 7: Video Trimmer & Media AI Editor -->
-        <div class="feature-box p-8 rounded-[2rem] flex flex-col justify-between">
+        <!-- 7. ID Card Scanner & A4 Document Merge -->
+        <div data-cat="scanner" class="feature-card feature-box p-6 rounded-2xl flex flex-col justify-between">
             <div>
-                <div class="w-14 h-14 bg-amber-500/10 text-amber-400 rounded-2xl flex items-center justify-center mb-6 text-2xl border border-amber-500/20">
-                    <i class="fas fa-wand-magic-sparkles"></i>
-                </div>
-                <h3 class="text-2xl font-bold mb-3 text-white">Video Trimmer & Image AI Editor</h3>
-                <p class="text-slate-400 leading-relaxed mb-6">
-                    Perform lossless video trimming without quality loss, merge video timelines with audio, remove image backgrounds, and blur sensitive regions on-device.
-                </p>
-            </div>
-            <ul class="space-y-2 text-xs font-semibold text-slate-300 border-t border-slate-800/80 pt-4">
-                <li class="flex items-center gap-2"><i class="fas fa-check text-amber-400"></i> Lossless Video Stream Copy Trimming</li>
-                <li class="flex items-center gap-2"><i class="fas fa-check text-amber-400"></i> EXIF Metadata Scrubbing & Photo Collages</li>
-                <li class="flex items-center gap-2"><i class="fas fa-check text-amber-400"></i> Object Eraser & Privacy Region Blur</li>
-            </ul>
-        </div>
-
-        <!-- Feature 8: A4 Document Scanner -->
-        <div class="feature-box p-8 rounded-[2rem] flex flex-col justify-between">
-            <div>
-                <div class="w-14 h-14 bg-cyan-500/10 text-cyan-400 rounded-2xl flex items-center justify-center mb-6 text-2xl border border-cyan-500/20">
+                <div class="w-11 h-11 bg-cyan-500/10 text-cyan-400 rounded-xl flex items-center justify-center mb-4 text-xl border border-cyan-500/20">
                     <i class="fas fa-id-card"></i>
                 </div>
-                <h3 class="text-2xl font-bold mb-3 text-white">ID Card Scanner & A4 Merge</h3>
-                <p class="text-slate-400 leading-relaxed mb-6">
-                    Scan driver's licenses, passports, and ID cards. Vault automatically aligns and merges front and back card scans into a single printable A4 document.
+                <h3 class="text-xl font-bold mb-2 text-white">ID Card Scanner & A4 Merge</h3>
+                <p class="text-slate-400 text-xs sm:text-sm leading-relaxed mb-4">
+                    Scan passports, driver's licenses, and identity cards. Vault automatically aligns and merges front & back card photos into a single printable A4 document. Includes redesigned Material 3 document cards.
                 </p>
             </div>
-            <ul class="space-y-2 text-xs font-semibold text-slate-300 border-t border-slate-800/80 pt-4">
-                <li class="flex items-center gap-2"><i class="fas fa-check text-cyan-400"></i> Front & Back Scan Auto-Merge</li>
-                <li class="flex items-center gap-2"><i class="fas fa-check text-cyan-400"></i> High Resolution Printable A4 Output</li>
-                <li class="flex items-center gap-2"><i class="fas fa-check text-cyan-400"></i> Document Classification & Expiry Alert</li>
+            <ul class="space-y-1.5 text-xs font-semibold text-slate-300 border-t border-slate-800/80 pt-3">
+                <li class="flex items-center gap-2"><i class="fas fa-check text-cyan-400 text-[10px]"></i> Front & Back Scan Auto-Merge to A4</li>
+                <li class="flex items-center gap-2"><i class="fas fa-check text-cyan-400 text-[10px]"></i> High Resolution Printable PDF / Image Output</li>
+                <li class="flex items-center gap-2"><i class="fas fa-check text-cyan-400 text-[10px]"></i> Document Expiry Alerts & Material 3 Containers</li>
             </ul>
         </div>
 
-        <!-- Feature 9: Duplicate Cleaner & Storage Explorer -->
-        <div class="feature-box p-8 rounded-[2rem] flex flex-col justify-between">
+        <!-- 8. Media AI Tools & EXIF Scrubbing -->
+        <div data-cat="media" class="feature-card feature-box p-6 rounded-2xl flex flex-col justify-between">
             <div>
-                <div class="w-14 h-14 bg-teal-500/10 text-teal-400 rounded-2xl flex items-center justify-center mb-6 text-2xl border border-teal-500/20">
-                    <i class="fas fa-broom"></i>
+                <div class="w-11 h-11 bg-amber-500/10 text-amber-400 rounded-xl flex items-center justify-center mb-4 text-xl border border-amber-500/20">
+                    <i class="fas fa-wand-magic-sparkles"></i>
                 </div>
-                <h3 class="text-2xl font-bold mb-3 text-white">Duplicate Media Cleaner</h3>
-                <p class="text-slate-400 leading-relaxed mb-6">
-                    Free up device storage. Vault scans encrypted files and media to find duplicate photos and videos, letting you clean up unnecessary data easily.
+                <h3 class="text-xl font-bold mb-2 text-white">Media Suite, Collages & EXIF Scrub</h3>
+                <p class="text-slate-400 text-xs sm:text-sm leading-relaxed mb-4">
+                    Perform lossless video stream-copy trimming, create Photo Collages (up to 9 photos), Milestone Storyboards, and Multi-Clip Video Mergers. Scrub sensitive EXIF location/camera metadata before sharing files.
                 </p>
             </div>
-            <ul class="space-y-2 text-xs font-semibold text-slate-300 border-t border-slate-800/80 pt-4">
-                <li class="flex items-center gap-2"><i class="fas fa-check text-teal-400"></i> On-Device Hash-Based Duplicate Detector</li>
-                <li class="flex items-center gap-2"><i class="fas fa-check text-teal-400"></i> Encrypted Storage Breakdown</li>
-                <li class="flex items-center gap-2"><i class="fas fa-check text-teal-400"></i> Recycle Bin / Trash Safety Net</li>
+            <ul class="space-y-1.5 text-xs font-semibold text-slate-300 border-t border-slate-800/80 pt-3">
+                <li class="flex items-center gap-2"><i class="fas fa-check text-amber-400 text-[10px]"></i> Lossless Video Trimmer & Multi-Clip Merger</li>
+                <li class="flex items-center gap-2"><i class="fas fa-check text-amber-400 text-[10px]"></i> Photo Collage Maker & Milestone Storyboards</li>
+                <li class="flex items-center gap-2"><i class="fas fa-check text-amber-400 text-[10px]"></i> Batch EXIF Location & Metadata Cleaner</li>
+            </ul>
+        </div>
+
+        <!-- 9. Backups, Recycle Bin & Profiles -->
+        <div data-cat="data" class="feature-card feature-box p-6 rounded-2xl flex flex-col justify-between">
+            <div>
+                <div class="w-11 h-11 bg-teal-500/10 text-teal-400 rounded-xl flex items-center justify-center mb-4 text-xl border border-teal-500/20">
+                    <i class="fas fa-database"></i>
+                </div>
+                <h3 class="text-xl font-bold mb-2 text-white">Backups, Recycle Bin & Profiles</h3>
+                <p class="text-slate-400 text-xs sm:text-sm leading-relaxed mb-4">
+                    Create password-protected `.vault` AES-256 backup files with Merge or Replace options. Features AutoScan folder monitoring, a Recycle Bin safety net with auto-clean (1 to 90 days), and up to 10 isolated profiles.
+                </p>
+            </div>
+            <ul class="space-y-1.5 text-xs font-semibold text-slate-300 border-t border-slate-800/80 pt-3">
+                <li class="flex items-center gap-2"><i class="fas fa-check text-teal-400 text-[10px]"></i> Encrypted `.vault` Backups (Merge / Replace Mode)</li>
+                <li class="flex items-center gap-2"><i class="fas fa-check text-teal-400 text-[10px]"></i> Recycle Bin / Trash with 1-90 Day Auto-Clean</li>
+                <li class="flex items-center gap-2"><i class="fas fa-check text-teal-400 text-[10px]"></i> Up to 10 Isolated Profiles & Official Passport Size Exports</li>
             </ul>
         </div>
 
     </div>
 </section>
 
-<!-- Data Types Supported Section -->
-<section class="py-24 bg-slate-900/40 border-y border-slate-800/60">
-    <div class="max-w-7xl mx-auto px-6 text-center">
-        <h2 class="text-3xl sm:text-5xl font-black mb-4 tracking-tight">One Vault for All Your <span class="gradient-text">Sensitive Data</span></h2>
-        <p class="text-slate-400 max-w-2xl mx-auto mb-16 text-sm sm:text-base">Store and protect every category of personal information in structured, encrypted vaults.</p>
+<!-- Quick Start Guide Section (From help_content.json) -->
+<section id="quick-start" class="py-14 sm:py-20 bg-slate-900/40 border-y border-slate-800/60">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6">
+        <div class="text-center max-w-3xl mx-auto mb-10 sm:mb-14">
+            <div class="inline-flex items-center gap-1.5 px-3.5 py-1 rounded-full bg-amber-500/10 border border-amber-500/20 text-amber-400 text-[10px] sm:text-[11px] font-bold uppercase tracking-wider mb-3">
+                <i class="fas fa-bolt text-[10px]"></i> Quick Start Guide
+            </div>
+            <h2 class="text-2xl sm:text-4xl font-black text-white tracking-tight">Set Up Your Vault in <span class="gradient-text">4 Easy Steps</span></h2>
+            <p class="text-slate-400 text-xs sm:text-sm mt-2">Follow these simple steps to lock down your credentials, media, and private documents in seconds.</p>
+        </div>
 
-        <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 gap-6 max-w-5xl mx-auto">
-            <div class="p-6 rounded-2xl bg-slate-800/40 border border-slate-700/40 flex flex-col items-center gap-3 hover:border-blue-500/50 transition-colors">
-                <i class="fas fa-camera-retro text-3xl text-blue-400"></i>
-                <span class="text-sm font-bold text-slate-200">Photos & Albums</span>
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-6">
+            <!-- Step 1 -->
+            <div class="p-5 rounded-2xl bg-slate-800/40 border border-slate-700/50 relative flex flex-col justify-between">
+                <div>
+                    <span class="w-8 h-8 rounded-xl bg-blue-500/20 text-blue-400 font-extrabold flex items-center justify-center text-xs sm:text-sm mb-4">1</span>
+                    <h3 class="font-bold text-white text-base mb-2">Create Your First Item</h3>
+                    <p class="text-slate-400 text-xs sm:text-sm leading-relaxed">
+                        Tap '+' or press 'A' on your physical keyboard. Select from Login, Card, Bank, Note, Identity, or WiFi categories and fill details.
+                    </p>
+                </div>
             </div>
-            <div class="p-6 rounded-2xl bg-slate-800/40 border border-slate-700/40 flex flex-col items-center gap-3 hover:border-blue-500/50 transition-colors">
-                <i class="fas fa-video text-3xl text-indigo-400"></i>
-                <span class="text-sm font-bold text-slate-200">Videos & Clips</span>
+
+            <!-- Step 2 -->
+            <div class="p-5 rounded-2xl bg-slate-800/40 border border-slate-700/50 relative flex flex-col justify-between">
+                <div>
+                    <span class="w-8 h-8 rounded-xl bg-emerald-500/20 text-emerald-400 font-extrabold flex items-center justify-center text-xs sm:text-sm mb-4">2</span>
+                    <h3 class="font-bold text-white text-base mb-2">Enable Biometrics</h3>
+                    <p class="text-slate-400 text-xs sm:text-sm leading-relaxed">
+                        Navigate to <strong>Settings > Security > Biometric Unlock</strong> to bind your Master Password to your device fingerprint or face recognition.
+                    </p>
+                </div>
             </div>
-            <div class="p-6 rounded-2xl bg-slate-800/40 border border-slate-700/40 flex flex-col items-center gap-3 hover:border-blue-500/50 transition-colors">
-                <i class="fas fa-key text-3xl text-emerald-400"></i>
-                <span class="text-sm font-bold text-slate-200">Passwords</span>
+
+            <!-- Step 3 -->
+            <div class="p-5 rounded-2xl bg-slate-800/40 border border-slate-700/50 relative flex flex-col justify-between">
+                <div>
+                    <span class="w-8 h-8 rounded-xl bg-indigo-500/20 text-indigo-400 font-extrabold flex items-center justify-center text-xs sm:text-sm mb-4">3</span>
+                    <h3 class="font-bold text-white text-base mb-2">Save Recovery Phrase</h3>
+                    <p class="text-slate-400 text-xs sm:text-sm leading-relaxed">
+                        Go to <strong>Settings > Security > Recovery Phrase</strong> and record your 12-word master key. This is your only zero-knowledge recovery key.
+                    </p>
+                </div>
             </div>
-            <div class="p-6 rounded-2xl bg-slate-800/40 border border-slate-700/40 flex flex-col items-center gap-3 hover:border-blue-500/50 transition-colors">
-                <i class="fas fa-credit-card text-3xl text-purple-400"></i>
-                <span class="text-sm font-bold text-slate-200">Payment Cards</span>
-            </div>
-            <div class="p-6 rounded-2xl bg-slate-800/40 border border-slate-700/40 flex flex-col items-center gap-3 hover:border-blue-500/50 transition-colors">
-                <i class="fas fa-shield-halved text-3xl text-rose-400"></i>
-                <span class="text-sm font-bold text-slate-200">2FA / TOTP</span>
-            </div>
-            <div class="p-6 rounded-2xl bg-slate-800/40 border border-slate-700/40 flex flex-col items-center gap-3 hover:border-blue-500/50 transition-colors">
-                <i class="fas fa-id-card text-3xl text-cyan-400"></i>
-                <span class="text-sm font-bold text-slate-200">ID Cards & Passports</span>
-            </div>
-            <div class="p-6 rounded-2xl bg-slate-800/40 border border-slate-700/40 flex flex-col items-center gap-3 hover:border-blue-500/50 transition-colors">
-                <i class="fas fa-building-columns text-3xl text-amber-400"></i>
-                <span class="text-sm font-bold text-slate-200">Bank Accounts</span>
-            </div>
-            <div class="p-6 rounded-2xl bg-slate-800/40 border border-slate-700/40 flex flex-col items-center gap-3 hover:border-blue-500/50 transition-colors">
-                <i class="fas fa-note-sticky text-3xl text-teal-400"></i>
-                <span class="text-sm font-bold text-slate-200">Secure Notes</span>
-            </div>
-            <div class="p-6 rounded-2xl bg-slate-800/40 border border-slate-700/40 flex flex-col items-center gap-3 hover:border-blue-500/50 transition-colors">
-                <i class="fas fa-wifi text-3xl text-pink-400"></i>
-                <span class="text-sm font-bold text-slate-200">WiFi Credentials</span>
-            </div>
-            <div class="p-6 rounded-2xl bg-slate-800/40 border border-slate-700/40 flex flex-col items-center gap-3 hover:border-blue-500/50 transition-colors">
-                <i class="fas fa-map-location-dot text-3xl text-sky-400"></i>
-                <span class="text-sm font-bold text-slate-200">Addresses & Contacts</span>
+
+            <!-- Step 4 -->
+            <div class="p-5 rounded-2xl bg-slate-800/40 border border-slate-700/50 relative flex flex-col justify-between">
+                <div>
+                    <span class="w-8 h-8 rounded-xl bg-purple-500/20 text-purple-400 font-extrabold flex items-center justify-center text-xs sm:text-sm mb-4">4</span>
+                    <h3 class="font-bold text-white text-base mb-2">Organize & Audit</h3>
+                    <p class="text-slate-400 text-xs sm:text-sm leading-relaxed">
+                        Use category filter pills or top search bar. Check your real-time <strong>Security Radar</strong> score for weak or duplicate passwords.
+                    </p>
+                </div>
             </div>
         </div>
     </div>
 </section>
 
-<!-- Air-Gapped Privacy Security Architecture -->
-<section class="py-24 max-w-7xl mx-auto px-6">
-    <div class="gradient-border p-10 md:p-16 rounded-[2.5rem] relative overflow-hidden">
-        <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+<!-- Data Categories Grid -->
+<section class="py-14 sm:py-20 max-w-7xl mx-auto px-4 sm:px-6">
+    <div class="text-center max-w-2xl mx-auto mb-10 sm:mb-12">
+        <h2 class="text-2xl sm:text-4xl font-black mb-3 tracking-tight">One Vault for All Your <span class="gradient-text">Sensitive Data</span></h2>
+        <p class="text-slate-400 text-xs sm:text-sm">Store and manage all categories of personal information under zero-knowledge encryption.</p>
+    </div>
+
+    <div class="grid grid-cols-2 xs:grid-cols-3 sm:grid-cols-4 md:grid-cols-5 gap-3 sm:gap-4 max-w-5xl mx-auto">
+        <div class="p-3.5 sm:p-4 rounded-xl bg-slate-800/30 border border-slate-700/40 flex flex-col items-center gap-2 hover:border-blue-500/50 transition-colors text-center">
+            <i class="fas fa-camera-retro text-xl sm:text-2xl text-blue-400"></i>
+            <span class="text-xs font-bold text-slate-200">Photos & Albums</span>
+        </div>
+        <div class="p-3.5 sm:p-4 rounded-xl bg-slate-800/30 border border-slate-700/40 flex flex-col items-center gap-2 hover:border-blue-500/50 transition-colors text-center">
+            <i class="fas fa-video text-xl sm:text-2xl text-indigo-400"></i>
+            <span class="text-xs font-bold text-slate-200">Videos & Clips</span>
+        </div>
+        <div class="p-3.5 sm:p-4 rounded-xl bg-slate-800/30 border border-slate-700/40 flex flex-col items-center gap-2 hover:border-blue-500/50 transition-colors text-center">
+            <i class="fas fa-key text-xl sm:text-2xl text-emerald-400"></i>
+            <span class="text-xs font-bold text-slate-200">Passwords</span>
+        </div>
+        <div class="p-3.5 sm:p-4 rounded-xl bg-slate-800/30 border border-slate-700/40 flex flex-col items-center gap-2 hover:border-blue-500/50 transition-colors text-center">
+            <i class="fas fa-credit-card text-xl sm:text-2xl text-purple-400"></i>
+            <span class="text-xs font-bold text-slate-200">Payment Cards</span>
+        </div>
+        <div class="p-3.5 sm:p-4 rounded-xl bg-slate-800/30 border border-slate-700/40 flex flex-col items-center gap-2 hover:border-blue-500/50 transition-colors text-center">
+            <i class="fas fa-shield-halved text-xl sm:text-2xl text-rose-400"></i>
+            <span class="text-xs font-bold text-slate-200">2FA / TOTP</span>
+        </div>
+        <div class="p-3.5 sm:p-4 rounded-xl bg-slate-800/30 border border-slate-700/40 flex flex-col items-center gap-2 hover:border-blue-500/50 transition-colors text-center">
+            <i class="fas fa-id-card text-xl sm:text-2xl text-cyan-400"></i>
+            <span class="text-xs font-bold text-slate-200">ID Cards & Passports</span>
+        </div>
+        <div class="p-3.5 sm:p-4 rounded-xl bg-slate-800/30 border border-slate-700/40 flex flex-col items-center gap-2 hover:border-blue-500/50 transition-colors text-center">
+            <i class="fas fa-building-columns text-xl sm:text-2xl text-amber-400"></i>
+            <span class="text-xs font-bold text-slate-200">Bank Accounts</span>
+        </div>
+        <div class="p-3.5 sm:p-4 rounded-xl bg-slate-800/30 border border-slate-700/40 flex flex-col items-center gap-2 hover:border-blue-500/50 transition-colors text-center">
+            <i class="fas fa-note-sticky text-xl sm:text-2xl text-teal-400"></i>
+            <span class="text-xs font-bold text-slate-200">Secure Notes</span>
+        </div>
+        <div class="p-3.5 sm:p-4 rounded-xl bg-slate-800/30 border border-slate-700/40 flex flex-col items-center gap-2 hover:border-blue-500/50 transition-colors text-center">
+            <i class="fas fa-wifi text-xl sm:text-2xl text-pink-400"></i>
+            <span class="text-xs font-bold text-slate-200">WiFi Credentials</span>
+        </div>
+        <div class="p-3.5 sm:p-4 rounded-xl bg-slate-800/30 border border-slate-700/40 flex flex-col items-center gap-2 hover:border-blue-500/50 transition-colors text-center">
+            <i class="fas fa-map-location-dot text-xl sm:text-2xl text-sky-400"></i>
+            <span class="text-xs font-bold text-slate-200">Addresses & Contacts</span>
+        </div>
+    </div>
+</section>
+
+<!-- Air-Gapped Security Architecture & Comparison -->
+<section class="py-14 sm:py-20 max-w-7xl mx-auto px-4 sm:px-6">
+    <div class="gradient-border p-6 sm:p-12 rounded-3xl relative overflow-hidden">
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 items-center">
             <div>
-                <div class="inline-block px-3 py-1 rounded-full bg-emerald-500/10 border border-emerald-500/20 text-emerald-400 text-xs font-bold uppercase tracking-widest mb-6">
+                <div class="inline-block px-3.5 py-1 rounded-full bg-emerald-500/10 border border-emerald-500/20 text-emerald-400 text-[10px] sm:text-[11px] font-bold uppercase tracking-wider mb-4">
                     Air-Gapped Architecture
                 </div>
-                <h2 class="text-3xl md:text-5xl font-black mb-6 text-white leading-tight">
-                    Why <span class="gradient-text">Air-Gapped Local Vaults</span> Beat Cloud Storage
+                <h2 class="text-2xl sm:text-4xl font-black mb-4 text-white leading-tight">
+                    Why <span class="gradient-text">Air-Gapped Local Storage</span> Beats Cloud Apps
                 </h2>
-                <p class="text-slate-400 leading-relaxed mb-8">
-                    Cloud password managers and photo vaults store your data on remote servers—making them vulnerable to data breaches and server downtime. <strong class="text-slate-200">Vault: Hide Photos, Passwords</strong> operates entirely offline. Your master key never touches a network.
+                <p class="text-slate-400 text-xs sm:text-sm leading-relaxed mb-6">
+                    Cloud password managers and photo vaults store master keys and files on remote servers—exposing them to data leaks and downtime. <strong class="text-slate-200">Vault: Hide Photos, Passwords</strong> functions 100% offline.
                 </p>
-                <div class="space-y-4">
-                    <div class="flex items-start gap-4">
-                        <div class="w-8 h-8 rounded-lg bg-blue-500/10 text-blue-400 flex items-center justify-center shrink-0 mt-1"><i class="fas fa-lock"></i></div>
+                <div class="space-y-3">
+                    <div class="flex items-start gap-3">
+                        <div class="w-7 h-7 sm:w-8 sm:h-8 rounded-lg bg-blue-500/10 text-blue-400 flex items-center justify-center shrink-0 mt-0.5 text-xs sm:text-sm"><i class="fas fa-lock"></i></div>
                         <div>
-                            <h4 class="font-bold text-white text-base">SQLCipher AES-256 Storage</h4>
-                            <p class="text-xs text-slate-400">Database and media files are encrypted with PBKDF2 key derivation.</p>
+                            <h4 class="font-bold text-white text-xs sm:text-sm">SQLCipher AES-256 Storage</h4>
+                            <p class="text-[10px] sm:text-[11px] text-slate-400">Encrypted locally via PBKDF2 key derivation & Android KeyStore.</p>
                         </div>
                     </div>
-                    <div class="flex items-start gap-4">
-                        <div class="w-8 h-8 rounded-lg bg-emerald-500/10 text-emerald-400 flex items-center justify-center shrink-0 mt-1"><i class="fas fa-wifi-slash"></i></div>
+                    <div class="flex items-start gap-3">
+                        <div class="w-7 h-7 sm:w-8 sm:h-8 rounded-lg bg-emerald-500/10 text-emerald-400 flex items-center justify-center shrink-0 mt-0.5 text-xs sm:text-sm"><i class="fas fa-wifi-slash"></i></div>
                         <div>
-                            <h4 class="font-bold text-white text-base">Zero Internet Access Required</h4>
-                            <p class="text-xs text-slate-400">The app does not use network permissions, preventing data leaks by design.</p>
+                            <h4 class="font-bold text-white text-xs sm:text-sm">Zero Network Permission</h4>
+                            <p class="text-[10px] sm:text-[11px] text-slate-400">Contains zero internet code, eliminating external leakage by design.</p>
                         </div>
                     </div>
-                    <div class="flex items-start gap-4">
-                        <div class="w-8 h-8 rounded-lg bg-purple-500/10 text-purple-400 flex items-center justify-center shrink-0 mt-1"><i class="fas fa-microchip"></i></div>
+                    <div class="flex items-start gap-3">
+                        <div class="w-7 h-7 sm:w-8 sm:h-8 rounded-lg bg-purple-500/10 text-purple-400 flex items-center justify-center shrink-0 mt-0.5 text-xs sm:text-sm"><i class="fas fa-microchip"></i></div>
                         <div>
-                            <h4 class="font-bold text-white text-base">On-Device Processing</h4>
-                            <p class="text-xs text-slate-400">AI analysis, OCR document scanning, and media editing execute locally on your phone GPU/NPU.</p>
+                            <h4 class="font-bold text-white text-xs sm:text-sm">100% On-Device AI Execution</h4>
+                            <p class="text-[10px] sm:text-[11px] text-slate-400">Offline MediaPipe AI, document OCR, and media editing executed in RAM.</p>
                         </div>
                     </div>
                 </div>
             </div>
 
-            <div class="bg-slate-900/90 p-5 sm:p-8 rounded-2xl sm:rounded-3xl border border-slate-800 shadow-xl backdrop-blur-xl">
-                <!-- Card Header -->
-                <div class="text-center mb-6 pb-4 border-b border-slate-800">
-                    <h3 class="text-lg sm:text-xl font-extrabold text-white tracking-tight">Cloud Storage vs. Vault Air-Gapped</h3>
-                    <p class="text-xs text-slate-400 mt-1">Direct feature-by-feature security comparison</p>
+            <!-- Comparison Matrix Table (Mobile Responsive) -->
+            <div class="bg-slate-900/90 p-4 sm:p-6 rounded-2xl border border-slate-800 shadow-xl backdrop-blur-xl">
+                <div class="text-center mb-4 pb-3 border-b border-slate-800">
+                    <h3 class="text-base sm:text-lg font-extrabold text-white tracking-tight">Cloud Apps vs. Vault Air-Gapped</h3>
+                    <p class="text-[10px] text-slate-400 mt-0.5">Security comparison matrix</p>
                 </div>
 
-                <!-- Table Header Row -->
-                <div class="grid grid-cols-12 gap-2 text-[11px] sm:text-xs font-extrabold uppercase tracking-wider text-slate-400 pb-3 border-b border-slate-800/80 px-2 sm:px-3">
+                <div class="grid grid-cols-12 gap-1.5 text-[9px] sm:text-[10px] font-extrabold uppercase tracking-wider text-slate-400 pb-2.5 border-b border-slate-800/80 px-2">
                     <div class="col-span-6 text-left">Feature / Risk</div>
                     <div class="col-span-3 text-center text-rose-400">Cloud Apps</div>
                     <div class="col-span-3 text-right text-emerald-400">Vault App</div>
                 </div>
 
-                <!-- Comparison Rows -->
-                <div class="divide-y divide-slate-800/60 text-xs sm:text-sm font-semibold text-slate-200">
-                    <div class="grid grid-cols-12 gap-2 py-3.5 px-2 sm:px-3 items-center hover:bg-slate-800/30 rounded-xl transition-colors">
-                        <div class="col-span-6 text-left text-slate-300">Server Data Leak Risk</div>
+                <div class="divide-y divide-slate-800/60 text-[11px] sm:text-xs font-semibold text-slate-200">
+                    <div class="grid grid-cols-12 gap-1.5 py-2.5 px-2 items-center hover:bg-slate-800/30 rounded-lg transition-colors">
+                        <div class="col-span-6 text-left text-slate-300">Server Breach Risk</div>
                         <div class="col-span-3 text-center text-rose-400 font-bold flex items-center justify-center gap-1">
-                            <i class="fas fa-xmark text-rose-500"></i> <span class="hidden xs:inline text-[11px]">HIGH</span>
+                            <i class="fas fa-xmark text-[10px]"></i> <span class="text-[9px] sm:text-[10px]">HIGH</span>
                         </div>
                         <div class="col-span-3 text-right text-emerald-400 font-bold flex items-center justify-end gap-1">
-                            <i class="fas fa-shield-check text-emerald-400"></i> <span class="text-[11px] sm:text-xs">ZERO</span>
+                            <i class="fas fa-shield-check text-[10px]"></i> <span class="text-[9px] sm:text-[10px]">ZERO</span>
                         </div>
                     </div>
 
-                    <div class="grid grid-cols-12 gap-2 py-3.5 px-2 sm:px-3 items-center hover:bg-slate-800/30 rounded-xl transition-colors">
-                        <div class="col-span-6 text-left text-slate-300">Requires Internet Connection</div>
+                    <div class="grid grid-cols-12 gap-1.5 py-2.5 px-2 items-center hover:bg-slate-800/30 rounded-lg transition-colors">
+                        <div class="col-span-6 text-left text-slate-300">Requires Internet</div>
                         <div class="col-span-3 text-center text-rose-400 font-bold flex items-center justify-center gap-1">
-                            <i class="fas fa-wifi text-rose-400"></i> <span class="hidden xs:inline text-[11px]">YES</span>
+                            <i class="fas fa-wifi text-[10px]"></i> <span class="text-[9px] sm:text-[10px]">YES</span>
                         </div>
                         <div class="col-span-3 text-right text-emerald-400 font-bold flex items-center justify-end gap-1">
-                            <i class="fas fa-wifi-slash text-emerald-400"></i> <span class="text-[11px] sm:text-xs">NO</span>
+                            <i class="fas fa-wifi-slash text-[10px]"></i> <span class="text-[9px] sm:text-[10px]">NO</span>
                         </div>
                     </div>
 
-                    <div class="grid grid-cols-12 gap-2 py-3.5 px-2 sm:px-3 items-center hover:bg-slate-800/30 rounded-xl transition-colors">
-                        <div class="col-span-6 text-left text-slate-300">Calculator Disguise Mode</div>
+                    <div class="grid grid-cols-12 gap-1.5 py-2.5 px-2 items-center hover:bg-slate-800/30 rounded-lg transition-colors">
+                        <div class="col-span-6 text-left text-slate-300">Calculator Stealth Disguise</div>
                         <div class="col-span-3 text-center text-slate-500 font-bold flex items-center justify-center gap-1">
-                            <i class="fas fa-minus text-slate-600"></i> <span class="hidden xs:inline text-[11px]">NO</span>
+                            <i class="fas fa-minus text-[10px]"></i> <span class="text-[9px] sm:text-[10px]">NO</span>
                         </div>
                         <div class="col-span-3 text-right text-emerald-400 font-bold flex items-center justify-end gap-1">
-                            <i class="fas fa-calculator text-emerald-400"></i> <span class="text-[11px] sm:text-xs">YES</span>
+                            <i class="fas fa-calculator text-[10px]"></i> <span class="text-[9px] sm:text-[10px]">YES</span>
                         </div>
                     </div>
 
-                    <div class="grid grid-cols-12 gap-2 py-3.5 px-2 sm:px-3 items-center hover:bg-slate-800/30 rounded-xl transition-colors">
-                        <div class="col-span-6 text-left text-slate-300">100% On-Device Local AI</div>
+                    <div class="grid grid-cols-12 gap-1.5 py-2.5 px-2 items-center hover:bg-slate-800/30 rounded-lg transition-colors">
+                        <div class="col-span-6 text-left text-slate-300">Decoy Vault & Intruder Selfie</div>
                         <div class="col-span-3 text-center text-slate-500 font-bold flex items-center justify-center gap-1">
-                            <i class="fas fa-minus text-slate-600"></i> <span class="hidden xs:inline text-[11px]">NO</span>
+                            <i class="fas fa-minus text-[10px]"></i> <span class="text-[9px] sm:text-[10px]">NO</span>
                         </div>
                         <div class="col-span-3 text-right text-emerald-400 font-bold flex items-center justify-end gap-1">
-                            <i class="fas fa-brain text-emerald-400"></i> <span class="text-[11px] sm:text-xs">YES</span>
+                            <i class="fas fa-shield-cat text-[10px]"></i> <span class="text-[9px] sm:text-[10px]">YES</span>
                         </div>
                     </div>
 
-                    <div class="grid grid-cols-12 gap-2 py-3.5 px-2 sm:px-3 items-center hover:bg-slate-800/30 rounded-xl transition-colors">
-                        <div class="col-span-6 text-left text-slate-300">Monthly Subscription Fee</div>
-                        <div class="col-span-3 text-center text-rose-400 font-bold flex items-center justify-center gap-1">
-                            <i class="fas fa-coins text-rose-400"></i> <span class="hidden xs:inline text-[11px]">$$$</span>
+                    <div class="grid grid-cols-12 gap-1.5 py-2.5 px-2 items-center hover:bg-slate-800/30 rounded-lg transition-colors">
+                        <div class="col-span-6 text-left text-slate-300">100% Offline LLM AI</div>
+                        <div class="col-span-3 text-center text-slate-500 font-bold flex items-center justify-center gap-1">
+                            <i class="fas fa-minus text-[10px]"></i> <span class="text-[9px] sm:text-[10px]">NO</span>
                         </div>
                         <div class="col-span-3 text-right text-emerald-400 font-bold flex items-center justify-end gap-1">
-                            <i class="fas fa-circle-check text-emerald-400"></i> <span class="text-[11px] sm:text-xs">FREE</span>
+                            <i class="fas fa-brain text-[10px]"></i> <span class="text-[9px] sm:text-[10px]">YES</span>
+                        </div>
+                    </div>
+
+                    <div class="grid grid-cols-12 gap-1.5 py-2.5 px-2 items-center hover:bg-slate-800/30 rounded-lg transition-colors">
+                        <div class="col-span-6 text-left text-slate-300">Monthly Subscriptions</div>
+                        <div class="col-span-3 text-center text-rose-400 font-bold flex items-center justify-center gap-1">
+                            <i class="fas fa-coins text-[10px]"></i> <span class="text-[9px] sm:text-[10px]">$$$</span>
+                        </div>
+                        <div class="col-span-3 text-right text-emerald-400 font-bold flex items-center justify-end gap-1">
+                            <i class="fas fa-circle-check text-[10px]"></i> <span class="text-[9px] sm:text-[10px]">FREE</span>
                         </div>
                     </div>
                 </div>
@@ -469,96 +581,104 @@
 </section>
 
 <!-- FAQ Section -->
-<section id="faq" class="py-20 max-w-4xl mx-auto px-6">
-    <div class="text-center mb-16">
-        <h2 class="text-3xl sm:text-5xl font-black mb-4 tracking-tight"><span class="gradient-text">Frequently Asked Questions</span></h2>
-        <p class="text-slate-400 text-sm sm:text-base">Got questions about Vault: Hide Photos, Passwords? We have answers.</p>
+<section id="faq" class="py-14 sm:py-20 max-w-4xl mx-auto px-4 sm:px-6">
+    <div class="text-center mb-10 sm:mb-14">
+        <h2 class="text-xl sm:text-4xl font-black mb-3 tracking-tight"><span class="gradient-text">Frequently Asked Questions</span></h2>
+        <p class="text-slate-400 text-xs sm:text-sm">Got questions about Vault? Here are answers directly from the official guide.</p>
     </div>
 
-    <div class="space-y-4">
-        <details class="group bg-slate-900/60 p-6 rounded-2xl border border-slate-800 [&_summary::-webkit-details-marker]:hidden cursor-pointer">
-            <summary class="flex items-center justify-between font-bold text-white text-lg">
-                <span>How does the Calculator Stealth mode work?</span>
-                <span class="transition group-open:rotate-180 text-blue-400"><i class="fas fa-chevron-down"></i></span>
+    <div class="space-y-3">
+        <details class="group bg-slate-900/60 p-4 sm:p-5 rounded-xl border border-slate-800 [&_summary::-webkit-details-marker]:hidden cursor-pointer">
+            <summary class="flex items-center justify-between font-bold text-white text-xs sm:text-base">
+                <span>How does Calculator Stealth mode work?</span>
+                <span class="transition group-open:rotate-180 text-blue-400 text-xs shrink-0 ml-2"><i class="fas fa-chevron-down"></i></span>
             </summary>
-            <p class="mt-4 text-slate-400 text-sm leading-relaxed">
-                When Calculator Stealth is enabled, Vault replaces its launcher icon and UI with a standard working calculator. Performing calculations works normally. To open your vault, simply enter your custom mathematical PIN sequence into the calculator and tap the '=' key.
+            <p class="mt-2.5 sm:mt-3 text-slate-400 text-xs sm:text-sm leading-relaxed">
+                In <strong>Settings > Security > Stealth Mode</strong>, turning on disguise replaces Vault's launcher icon and UI with a standard working calculator. To unlock, simply type your secret PIN sequence (e.g. 123+456) on the calculator keypad and press '='.
             </p>
         </details>
 
-        <details class="group bg-slate-900/60 p-6 rounded-2xl border border-slate-800 [&_summary::-webkit-details-marker]:hidden cursor-pointer">
-            <summary class="flex items-center justify-between font-bold text-white text-lg">
-                <span>Is any of my photo or password data uploaded to the cloud?</span>
-                <span class="transition group-open:rotate-180 text-blue-400"><i class="fas fa-chevron-down"></i></span>
+        <details class="group bg-slate-900/60 p-4 sm:p-5 rounded-xl border border-slate-800 [&_summary::-webkit-details-marker]:hidden cursor-pointer">
+            <summary class="flex items-center justify-between font-bold text-white text-xs sm:text-base">
+                <span>What is a Decoy Vault and how does it protect me?</span>
+                <span class="transition group-open:rotate-180 text-blue-400 text-xs shrink-0 ml-2"><i class="fas fa-chevron-down"></i></span>
             </summary>
-            <p class="mt-4 text-slate-400 text-sm leading-relaxed">
-                No. Vault operates on a zero-knowledge, local-only architecture. Zero kilobytes of data leave your device. All databases are encrypted with AES-256 and stored locally in protected Android app storage.
+            <p class="mt-2.5 sm:mt-3 text-slate-400 text-xs sm:text-sm leading-relaxed">
+                Enabled in <strong>Settings > Security > Decoy Vault</strong>, it creates a secondary fake vault with its own master password. If forced to unlock your phone, entering your decoy password displays harmless dummy records while leaving your true personal vault completely hidden.
             </p>
         </details>
 
-        <details class="group bg-slate-900/60 p-6 rounded-2xl border border-slate-800 [&_summary::-webkit-details-marker]:hidden cursor-pointer">
-            <summary class="flex items-center justify-between font-bold text-white text-lg">
-                <span>What is a Decoy Profile?</span>
-                <span class="transition group-open:rotate-180 text-blue-400"><i class="fas fa-chevron-down"></i></span>
+        <details class="group bg-slate-900/60 p-4 sm:p-5 rounded-xl border border-slate-800 [&_summary::-webkit-details-marker]:hidden cursor-pointer">
+            <summary class="flex items-center justify-between font-bold text-white text-xs sm:text-base">
+                <span>Is any of my photo or password data uploaded to servers?</span>
+                <span class="transition group-open:rotate-180 text-blue-400 text-xs shrink-0 ml-2"><i class="fas fa-chevron-down"></i></span>
             </summary>
-            <p class="mt-4 text-slate-400 text-sm leading-relaxed">
-                A Decoy Profile provides plausible deniability under coercion. You can set up a secondary "fake" password. Entering this password unlocks an entirely separate, harmless vault profile with benign photos or notes, hiding your true personal vault data.
+            <p class="mt-2.5 sm:mt-3 text-slate-400 text-xs sm:text-sm leading-relaxed">
+                No. Vault has zero internet permissions. All photos, videos, passwords, and media are encrypted with AES-256 via SQLite3MC and stored strictly inside protected local device storage.
             </p>
         </details>
 
-        <details class="group bg-slate-900/60 p-6 rounded-2xl border border-slate-800 [&_summary::-webkit-details-marker]:hidden cursor-pointer">
-            <summary class="flex items-center justify-between font-bold text-white text-lg">
-                <span>How does the On-Device Local AI (BYOM) work?</span>
-                <span class="transition group-open:rotate-180 text-blue-400"><i class="fas fa-chevron-down"></i></span>
+        <details class="group bg-slate-900/60 p-4 sm:p-5 rounded-xl border border-slate-800 [&_summary::-webkit-details-marker]:hidden cursor-pointer">
+            <summary class="flex items-center justify-between font-bold text-white text-xs sm:text-base">
+                <span>How does On-Device AI (BYOM) run without internet?</span>
+                <span class="transition group-open:rotate-180 text-blue-400 text-xs shrink-0 ml-2"><i class="fas fa-chevron-down"></i></span>
             </summary>
-            <p class="mt-4 text-slate-400 text-sm leading-relaxed">
-                Vault includes a Built-in Local AI Engine powered by MediaPipe LLM Inference. You can select lightweight models (like Gemma 2B or Phi-2) saved on your device storage. The AI runs completely on your phone's processor without needing internet or cloud API keys.
+            <p class="mt-2.5 sm:mt-3 text-slate-400 text-xs sm:text-sm leading-relaxed">
+                In <strong>Settings > AI & Automation</strong>, you can select offline converted model files (`.bin` or `.litertlm` like Gemma 2B or Phi-2) for MediaPipe LLM Inference. All model execution occurs in phone RAM without transmitting data online.
             </p>
         </details>
 
-        <details class="group bg-slate-900/60 p-6 rounded-2xl border border-slate-800 [&_summary::-webkit-details-marker]:hidden cursor-pointer">
-            <summary class="flex items-center justify-between font-bold text-white text-lg">
-                <span>How can I transfer or backup my encrypted data?</span>
-                <span class="transition group-open:rotate-180 text-blue-400"><i class="fas fa-chevron-down"></i></span>
+        <details class="group bg-slate-900/60 p-4 sm:p-5 rounded-xl border border-slate-800 [&_summary::-webkit-details-marker]:hidden cursor-pointer">
+            <summary class="flex items-center justify-between font-bold text-white text-xs sm:text-base">
+                <span>How do encrypted `.vault` backups work?</span>
+                <span class="transition group-open:rotate-180 text-blue-400 text-xs shrink-0 ml-2"><i class="fas fa-chevron-down"></i></span>
             </summary>
-            <p class="mt-4 text-slate-400 text-sm leading-relaxed">
-                You can generate password-protected `.vault` backup files at any time and save them to your internal storage, USB drive, or personal cloud storage. To restore on a new device, simply install Vault, select your `.vault` backup file, and enter your backup password.
+            <p class="mt-2.5 sm:mt-3 text-slate-400 text-xs sm:text-sm leading-relaxed">
+                In <strong>Settings > Data Management > Backup Vault</strong>, you can generate AES-256 encrypted `.vault` backup files protected by a backup password. Restoring lets you choose 'Merge' to combine records or 'Replace' for fresh device migrations.
+            </p>
+        </details>
+
+        <details class="group bg-slate-900/60 p-4 sm:p-5 rounded-xl border border-slate-800 [&_summary::-webkit-details-marker]:hidden cursor-pointer">
+            <summary class="flex items-center justify-between font-bold text-white text-xs sm:text-base">
+                <span>What happens when I delete photos or passwords?</span>
+                <span class="transition group-open:rotate-180 text-blue-400 text-xs shrink-0 ml-2"><i class="fas fa-chevron-down"></i></span>
+            </summary>
+            <p class="mt-2.5 sm:mt-3 text-slate-400 text-xs sm:text-sm leading-relaxed">
+                Deleted items move to <strong>Recycle Bin (Trash)</strong> in Settings > Data Management. You can restore items anytime or configure Auto-Clean to automatically purge items after 1 to 90 days.
             </p>
         </details>
     </div>
 </section>
 
-<!-- Bottom CTA Banner -->
-<section class="max-w-7xl mx-auto px-6 py-16">
-    <div class="bg-gradient-to-r from-blue-950/80 via-slate-900/90 to-indigo-950/80 border border-blue-500/30 p-10 md:p-16 rounded-[2.5rem] text-center relative overflow-hidden shadow-2xl backdrop-blur-xl">
-        <!-- Ambient Glow Effects -->
-        <div class="absolute -top-24 -left-24 w-80 h-80 bg-blue-500/20 rounded-full blur-3xl pointer-events-none"></div>
-        <div class="absolute -bottom-24 -right-24 w-80 h-80 bg-purple-500/20 rounded-full blur-3xl pointer-events-none"></div>
-
-        <div class="relative z-10 max-w-4xl mx-auto">
-            <!-- Top Badge -->
-            <div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-blue-500/15 border border-blue-400/30 text-blue-300 text-xs font-bold uppercase tracking-widest mb-6 shadow-sm">
+<!-- Bottom CTA Banner (Official Authentic Google Play Dark Store Badge) -->
+<section class="max-w-7xl mx-auto px-4 sm:px-6 py-12 sm:py-16">
+    <div class="bg-gradient-to-r from-blue-950/80 via-slate-900/90 to-indigo-950/80 border border-blue-500/30 p-8 sm:p-12 rounded-3xl text-center relative overflow-hidden shadow-xl backdrop-blur-xl">
+        <div class="relative z-10 max-w-3xl mx-auto">
+            <div class="inline-flex items-center gap-1.5 px-3.5 py-1 rounded-full bg-blue-500/15 border border-blue-400/30 text-blue-300 text-[10px] sm:text-xs font-bold uppercase tracking-wider mb-4 shadow-sm">
                 <i class="fas fa-shield-halved text-blue-400"></i>
                 <span>100% Offline • Free Google Play Download</span>
             </div>
 
-            <!-- Improved Heading Design -->
-            <h2 class="text-3xl sm:text-5xl md:text-6xl font-black mb-6 text-white tracking-tight leading-tight drop-shadow-md">
-                Protect Your Secret <span class="gradient-text">Photos, Videos & Passwords</span> Today
+            <h2 class="text-xl sm:text-4xl font-black mb-4 text-white tracking-tight leading-tight">
+                Secure Your <span class="gradient-text">Photos, Videos & Passwords</span> Today
             </h2>
 
-            <p class="text-slate-300 max-w-2xl mx-auto mb-10 text-base sm:text-lg leading-relaxed">
-                Download <strong class="text-white">Vault: Hide Photos, Passwords</strong> free on Google Play. Keep your private media, passwords, and identity documents 100% secure with calculator disguise and zero cloud risk.
+            <p class="text-slate-300 max-w-xl mx-auto mb-6 text-xs sm:text-sm leading-relaxed">
+                Download <strong class="text-white">Vault: Hide Photos, Passwords</strong> free on Google Play. Enjoy calculator disguise, encrypted photo gallery, system autofill, and offline local AI.
             </p>
 
-            <div class="flex flex-col sm:flex-row justify-center items-center gap-4">
-                <a href="https://play.google.com/store/apps/details?id=com.simplethings.vault" class="w-full sm:w-auto group inline-flex items-center justify-center gap-3 px-8 py-4 rounded-2xl bg-gradient-to-r from-blue-600 via-indigo-600 to-purple-600 hover:from-blue-500 hover:to-purple-500 text-white font-extrabold text-base transition-all shadow-xl shadow-blue-600/30 hover:shadow-blue-500/50 hover:scale-[1.02] active:scale-95 border border-blue-400/30">
-                    <i class="fab fa-google-play text-2xl group-hover:rotate-6 transition-transform"></i>
+            <div class="flex justify-center items-center">
+                <a href="https://play.google.com/store/apps/details?id=com.simplethings.vault" class="inline-flex items-center gap-3 px-5 py-2.5 sm:px-6 sm:py-3 rounded-2xl bg-slate-950 hover:bg-slate-900 border border-slate-700/80 hover:border-blue-500/80 shadow-lg shadow-black/50 hover:shadow-blue-500/20 transition-all active:scale-95 group shrink-0">
+                    <svg class="w-6 h-6 sm:w-7 sm:h-7 shrink-0 group-hover:scale-110 transition-transform" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M3.609 1.814L13.792 12 3.61 22.186A1.66 1.66 0 0 1 3 20.978V3.022c0-.46.183-.902.609-1.208z" fill="#0086F8"/>
+                        <path d="M17.208 8.584l-3.416 3.416 3.416 3.416 3.864-2.196c.72-.41.72-1.08 0-1.49l-3.864-3.146z" fill="#FFD600"/>
+                        <path d="M3.609 1.814L13.792 12l3.416-3.416L5.358.828c-.538-.306-1.21-.204-1.749.186z" fill="#00E676"/>
+                        <path d="M3.61 22.186L13.792 12l3.416 3.416-11.85 7.57a1.68 1.68 0 0 1-1.749.186z" fill="#FF3D00"/>
+                    </svg>
                     <div class="flex flex-col text-left leading-tight">
-                        <span class="text-[10px] text-blue-200 uppercase tracking-widest font-bold">Free Download</span>
-                        <span class="text-lg font-black tracking-tight">Get Vault on Google Play</span>
+                        <span class="text-[9px] sm:text-[10px] text-slate-400 font-bold uppercase tracking-widest">GET IT ON</span>
+                        <span class="text-sm sm:text-base font-black tracking-tight text-white group-hover:text-blue-400 transition-colors">Google Play</span>
                     </div>
-                    <i class="fas fa-arrow-right text-sm ml-1 group-hover:translate-x-1 transition-transform"></i>
                 </a>
             </div>
         </div>
@@ -566,27 +686,47 @@
 </section>
 
 <!-- Footer -->
-<footer class="border-t border-slate-800 py-12 px-6 bg-[#020617]">
-    <div class="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center gap-8">
+<footer class="border-t border-slate-800 py-10 px-4 sm:px-6 bg-[#020617]">
+    <div class="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center gap-6">
         <div class="flex flex-col items-center md:items-start text-center md:text-left">
-            <div class="flex items-center gap-3 mb-2">
-                <img src="img_1.png" alt="Vault Logo" class="w-10 h-10 rounded-2xl object-cover border border-blue-500/40 shadow-md shrink-0">
-                <span class="font-black text-lg brand-font gradient-text">Vault: Hide Photos, Passwords</span>
+            <div class="flex items-center gap-2 mb-1.5">
+                <img src="img_1.png" alt="Vault Logo" class="w-8 h-8 rounded-xl object-cover border border-blue-500/40 shadow-sm shrink-0">
+                <span class="font-extrabold text-sm sm:text-base brand-font gradient-text">Vault: Hide Photos, Passwords</span>
             </div>
-            <p class="text-slate-500 text-xs">Secure. Private. Smart. 100% Local Air-Gapped Storage.</p>
+            <p class="text-slate-500 text-[11px] sm:text-xs">Zero-Cloud • Air-Gapped Local Security • Calculator Disguise</p>
         </div>
 
-        <div class="flex flex-wrap justify-center gap-8 text-xs font-bold text-slate-400">
+        <div class="flex flex-wrap justify-center gap-5 sm:gap-6 text-xs font-bold text-slate-400">
             <a href="privacy.html" class="hover:text-blue-400 transition-colors">Privacy Policy</a>
             <a href="https://play.google.com/store/apps/details?id=com.simplethings.vault" class="hover:text-blue-400 transition-colors">Google Play Store</a>
             <a href="#features" class="hover:text-blue-400 transition-colors">Features</a>
+            <a href="#quick-start" class="hover:text-blue-400 transition-colors">Quick Start</a>
             <a href="#faq" class="hover:text-blue-400 transition-colors">FAQ</a>
         </div>
     </div>
-    <div class="max-w-7xl mx-auto mt-8 pt-6 border-t border-slate-900 text-center text-[11px] text-slate-600">
-        &copy; Vault: Hide Photos, Passwords. All rights reserved. Built for 100% Privacy & Local Security.
+    <div class="max-w-7xl mx-auto mt-6 pt-5 border-t border-slate-900 text-center text-[10px] text-slate-600">
+        &copy; Vault: Hide Photos, Passwords. All rights reserved. Built for 100% Privacy & Air-Gapped Local Security.
     </div>
 </footer>
+
+<!-- Interactive Category Filter Script -->
+<script>
+    function filterFeatures(category) {
+        const cards = document.querySelectorAll('.feature-card');
+        const buttons = document.querySelectorAll('.tab-btn');
+
+        buttons.forEach(btn => btn.classList.remove('active'));
+        event.currentTarget.classList.add('active');
+
+        cards.forEach(card => {
+            if (category === 'all' || card.getAttribute('data-cat') === category) {
+                card.style.display = 'flex';
+            } else {
+                card.style.display = 'none';
+            }
+        });
+    }
+</script>
 
 </body>
 </html>
