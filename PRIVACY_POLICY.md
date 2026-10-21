@@ -34,4 +34,4 @@ We **do not sell, trade, or share** your personal data with third parties. Your 
 
 ### 6. Contact Us
 If you have any questions about this Privacy Policy or how Vault handles your information, please contact us at:
-**Email:** vivekpandhare@gmail.com
+**Email:** golfplayer667@gmail.com
