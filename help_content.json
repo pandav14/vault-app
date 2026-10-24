@@ -1,0 +1,98 @@
+[
+  {
+    "id": "quick_start_guide",
+    "title": "Quick Start Guide",
+    "icon": "Bolt",
+    "category": "Getting Started",
+    "content": "Welcome to Vault! Here is the fastest way to set up and secure your digital life:\n\n1. Create Your First Item: Tap the large '+' icon or press 'A' on your physical keyboard. Select a category (Login, Card, Bank, Note, Identity, WiFi) and fill in the details.\n2. Enable Biometrics: Go to Settings > Security > Biometric Unlock to link your master password to your fingerprint or face ID.\n3. Save Recovery Phrase: Go to Settings > Security > Recovery Phrase to record your 12-word master key. This is the ONLY way to regain access if you forget your master password.\n4. Organize & Filter: Use category rows on the Home screen or the search bar at the top to filter items instantly.",
+    "keywords": ["start", "setup", "tutorial", "first steps", "how to", "guide", "create item", "quick start"]
+  },
+  {
+    "id": "vault_overview",
+    "title": "Welcome & Security Overview",
+    "icon": "Shield",
+    "category": "Getting Started",
+    "content": "Vault is a local-first, zero-cloud security and privacy manager built to keep your data completely offline and encrypted under your control:\n\n• Zero Internet Access: Vault contains zero internet permissions. It is physically impossible for your credentials or photos to leak to an external server.\n• Military-Grade Encryption: All passwords, notes, and media are encrypted locally using AES-256 via SQLite3MC and Android KeyStore.\n• Private PhotoVault: Dedicated encrypted vault space for sensitive photos, videos, and documents with screenshot protection.\n• Security Health Audit: Real-time analysis of weak passwords, reused credentials, incomplete identity documents, and upcoming expiries.",
+    "keywords": ["about", "overview", "security", "privacy", "local", "encryption", "safe", "zero cloud", "no internet"]
+  },
+  {
+    "id": "dashboard_styles",
+    "title": "Dashboard Layouts & PhotoVault Hero",
+    "icon": "Dashboard",
+    "category": "User Manual",
+    "content": "Customize your Home screen layout in **Settings > Appearance > Home Screen Style**:\n\n• Bento Grid Layout: Modern Material 3 modular layout with PhotoVault Hero card, Security Radar score, Secret Snap camera shortcut, and Vault AI assistant.\n• Dual-Hub Layout: Split-view hub with a top switcher allowing 1-tap toggling between 'Credentials & Passwords' and 'PhotoVault & Media' views.\n• Modern Layout: High-density card interface featuring Quick Access menu for Backup, Restore, Share, and Secret Snap.\n• Classic Layout: Traditional list interface focused on categories and items.\n• Hold to Peek: On Bento and Dual-Hub dashboards, touch and hold the PhotoVault Hero card to decrypt and preview sensitive media. Releasing your finger restores the privacy blur shield.\n• Secret Snap Shortcut: Tap 'Secret Snap' on the home dashboard to launch the system camera directly. Photos captured are encrypted and saved straight into PhotoVault without saving to the public gallery.",
+    "keywords": ["dashboard", "bento", "modern", "dual hub", "classic", "photovault", "hero", "hold to peek", "secret snap", "layout"]
+  },
+  {
+    "id": "security_menu_guide",
+    "title": "Security & Protection Settings Menu",
+    "icon": "Lock",
+    "category": "Settings Menu",
+    "content": "Configure advanced vault security options in **Settings > Security**:\n\n• Biometric Unlock: Go to **Settings > Security > Biometric Unlock** to enable fingerprint or face unlock.\n• Stealth Mode (Disguise): Go to **Settings > Security > Stealth Mode** to turn ON. Disguises the Vault app icon and title as a functional 'Calculator'. To unlock, enter your secret PIN sequence (e.g. 123+456) and press '=' on the calculator keypad.\n• Decoy Vault: Go to **Settings > Security > Decoy Vault** to enable. Creates a secondary 'Fake' vault with its own master password to show dummy records if forced to unlock.\n• Intruder Selfie: Go to **Settings > Security > Intruder Selfie** to turn ON. Takes a silent front-camera photo after 3 failed login attempts and logs timestamps in Break-in Logs.\n• Lock on Background: Go to **Settings > Security > Lock on Background**. Automatically locks database immediately whenever you switch away or close the app.\n• Screenshot Protection: Go to **Settings > Security > Screenshot Protection** to prevent screen recording and screenshots across all screens.\n• Recovery Phrase: Go to **Settings > Security > Recovery Phrase** to view your 12-word master key.\n• Autofill Service: Go to **Settings > Security > Autofill Service** to set Vault as your default Android autofill provider.",
+    "keywords": ["security menu", "stealth mode", "disguise", "calculator", "decoy vault", "intruder selfie", "lock on background", "screenshot protection", "biometric", "autofill"]
+  },
+  {
+    "id": "appearance_menu_guide",
+    "title": "Appearance & Theme Settings Menu",
+    "icon": "Palette",
+    "category": "Settings Menu",
+    "content": "Personalize the look and feel of Vault in **Settings > Appearance**:\n\n• App Theme: Go to **Settings > Appearance > Theme** to switch between 'Modern Warm', 'Midnight Dark', 'Spiderman / Spider Web', 'High-Contrast Light', or 'System Default'.\n• Home Screen Style: Go to **Settings > Appearance > Home Screen Style** to choose between Classic, Modern, Bento Grid, and Dual-Hub dashboard layouts.\n• Background Styles: Go to **Settings > Appearance > Background Design** to select Solid Prism, Vault Mesh, Blurred Scrim, or a Custom Image from your phone gallery.\n• Category Icon Shapes: Go to **Settings > Appearance > Icon Shape** to choose between Rounded, Square/Sharp, Circular, or Squircle (Smooth) category icon borders.",
+    "keywords": ["appearance", "theme", "dark mode", "spiderman", "background", "icon shape", "squircle", "bento", "dual hub", "styles"]
+  },
+  {
+    "id": "data_management_menu_guide",
+    "title": "Data Management & Backups Menu",
+    "icon": "Storage",
+    "category": "Settings Menu",
+    "content": "Manage backups, recovery, and trash in **Settings > Data Management**:\n\n• Backup Vault (.vault): Go to **Settings > Data Management > Backup Vault** to create an AES-256 encrypted file protected by a custom backup password.\n• Restore Vault: Go to **Settings > Data Management > Restore Vault** to import entries from a `.vault` file. Choose 'Merge' to combine data or 'Replace' for full device migrations.\n• Export ZIP Archive: Export selected files or gallery media as an encrypted or compressed ZIP archive to external storage with customizable compression quality.\n• AutoScan Folders: Set Vault to monitor specific device directories for automatic encrypted import.\n• Recycle Bin (Trash): Go to **Settings > Data Management > Recycle Bin** to view deleted entries. Restore items or set Auto-Clean duration (1 to 90 days or Never).\n• Recent Backups: Go to **Settings > Data Management > Recent Backups** to view automatic local recovery points.",
+    "keywords": ["data management", "backup vault", "restore vault", "export zip", "autoscan", "recycle bin", "trash", "auto clean", "recent backups", "export"]
+  },
+  {
+    "id": "ai_settings_menu_guide",
+    "title": "AI & Automation Settings Menu",
+    "icon": "SmartToy",
+    "category": "Settings Menu",
+    "content": "Configure private on-device AI features in **Settings > AI & Automation**:\n\n• Select Custom AI Model: Go to **Settings > AI & Automation > Select Custom AI Model** to select a downloaded offline model file (`.bin` or `.litertlm` converted for MediaPipe LLM Inference, e.g. Gemma 2B or Phi-2).\n• Revert to Standard AI: Go to **Settings > AI & Automation > Revert to Standard AI** to switch back to the built-in lightweight keyword & RAG engine.\n• Privacy Guarantee: All AI execution happens 100% offline in RAM. No prompt or vault data is ever transmitted over the network.",
+    "keywords": ["ai settings", "custom llm", "select model", "gemma", "revert standard ai", "litertlm", "offline ai"]
+  },
+  {
+    "id": "profiles_guide",
+    "title": "Manage Profiles & Multiple Identities",
+    "icon": "AccountCircle",
+    "category": "Settings Menu",
+    "content": "Isolate personal, work, and family vaults using Profiles in **Settings > Manage Profiles**:\n\n• How to Create Profile: Go to **Settings > Manage Profiles** and tap the '+' (Add Profile) button at the top right.\n• Switch Active Profile: Tap the profile avatar in the navigation bar or top header to switch active profile instantly.\n• Custom Profile Pictures: Set a custom photo for each profile. After uploading, use the circular cropping tool to adjust the image.\n• Official ID Exports: (Premium) Download profile pictures formatted in official Passport or Stamp sizes for physical document applications.\n• Data Transfer: Transfer all data between profiles via **Settings > Data Management > Transfer Data**.",
+    "keywords": ["profiles", "manage profiles", "create profile", "new profile", "switch profile", "identities", "passport size", "stamp size", "crop"]
+  },
+  {
+    "id": "photo_vault_and_gallery",
+    "title": "PhotoVault & Media Gallery Guide",
+    "icon": "PhotoLibrary",
+    "category": "Media Privacy",
+    "content": "Manage private encrypted photos, videos, and documents in Media Gallery:\n\n• Navigation & View Modes: Use the bottom navigation bar to switch between Gallery, Albums, Camera, People (AI face sorting), and Memories. Toggle between Grid, Gallery, Compact, and List view modes.\n• Category Filter Pills: Filter instantly by All, Images, Videos, Documents, or Audio at the top of the gallery.\n• Redesigned Document Cards: Seamless Material 3 document and file cards with clean unified containers across Light and Dark themes.\n• Creation & Import Tools: Tap '+' or Camera button for Secret Snap (capture encrypted photo directly to vault), Scan Document, File Import, Import ZIP, or AutoScan Folders.\n• Batch Tools & Export ZIP: Select multiple items to Export ZIP (with customizable compression), Scrub EXIF Metadata, Move to Recycle Bin, Add to Album, or Play Slideshow.\n• Creative Tools: Photo Collage (combine up to 9 photos), Milestone Storyboard, and Multi-Clip Video Merger & Timeline Editor.\n• Fast Scroll & Date Jump: Use the draggable scroll handle or section dropdown to jump to specific dates or months instantly.",
+    "keywords": ["photo vault", "media gallery", "secret snap", "albums", "video trimmer", "documents", "export zip", "exif", "collage", "milestone", "video merger", "fast scroll", "navigation bar"]
+  },
+  {
+    "id": "autofill_manual",
+    "title": "Enabling & Using Autofill Service",
+    "icon": "DynamicForm",
+    "category": "User Manual",
+    "content": "Vault automatically fills passwords, credit card numbers, and addresses in Chrome and Android apps:\n\n1. Enable Service: Go to **Settings > Security > Autofill Service** and tap 'Enable'. Select 'Vault' as your preferred Android Autofill Service.\n2. Usage: When opening a login or checkout page in Chrome or an app, Vault displays a suggestion banner. Tap it, authenticate with biometrics, and Vault fills the fields.\n3. Offer to Save: When logging into a new app or site, Vault prompts to save new credentials directly to your active profile.\n4. Save Offer Toggles: In **Settings > Security**, toggle 'Offer to save passwords', 'Offer to save cards', and 'Offer to save addresses' individually.",
+    "keywords": ["autofill", "autofill service", "enable autofill", "passwords", "chrome", "save offer", "checkout", "address fill"]
+  },
+  {
+    "id": "vault_entry_actions",
+    "title": "Vault Entry Actions & Features",
+    "icon": "TouchApp",
+    "category": "User Manual",
+    "content": "Manage individual vault records using quick-action tools:\n\n• Visibility Toggle: Tap the 'Eye' icon to reveal or mask passwords, PINs, and card numbers.\n• Smart Copy: Tap copy icons to send username, password, or account number to clipboard. Vault clears clipboard automatically after 30 seconds.\n• Edit & Duplicate: Tap the Pencil icon to update or Duplicate icon to clone an entry.\n• Share & QR Code: Generate an encrypted QR code for device-to-device scanning or share as an encrypted file.\n• Smart Document Scanner & A4 Merge: (Premium) Scan ID cards and merge front/back photos into a single printable A4 document.",
+    "keywords": ["entry actions", "copy", "edit", "duplicate", "qr code", "share", "visibility", "eye icon", "merged a4"]
+  },
+  {
+    "id": "premium_benefits_manual",
+    "title": "Vault Premium Benefits",
+    "icon": "Stars",
+    "category": "Premium & Support",
+    "content": "Unlock the full power of Vault with a 1-time lifetime Premium upgrade:\n\n• Unlimited Items & Media: Store unlimited passwords, cards, notes, photos, and media without restrictions.\n• 10 Isolated Profiles: Create up to 10 independent vaults (Free limit: 2).\n• Bento Grid & Dual-Hub Layouts: Access high-density Bento Grid and Dual-Hub home screen layouts.\n• Stealth Disguise & Decoy Vault: Disguise icon as a Calculator and create fake decoy vaults.\n• Intruder Selfie Alerts: Front-camera photo capture on failed login attempts.\n• Custom AI LLMs: Plug in custom offline LLM models (`.bin` or `.litertlm`).",
+    "keywords": ["premium", "benefits", "unlimited", "upgrade", "calculator disguise", "decoy", "intruder selfie"]
+  }
+]
